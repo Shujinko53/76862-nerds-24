@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Дмитрий Красавин](https://up.htmlacademy.ru/htmlcss/24/user/76862).
-* Наставник: `Андрей Ефимов`.
+* Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/efiand).
 
 ---
 
