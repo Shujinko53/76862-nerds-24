@@ -25,24 +25,69 @@
       <h1>Магазин готовых шаблонов</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр макетов</h2>
-        <!--The form will be here -->
-        <h3>Сетка</h3>
-        <ul class="network">
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
-        <h3>Особенности:</h3>
-        <ul class="features">
-           <li>Слайдер</li>
-           <li>Блок преимуществ</li>
-           <li>Новости</li>
-           <li>Галерея</li>
-           <li>Корзина</li>
-        </ul>
-        <p class="show-filter-layouts">
-        <a class="button" href="#">Показать</a>
-        </p>
+        <form class="filter-makets" action="index.html" method="post" oninput="sum.value=count.value">
+          <label for="count">
+            <h3>Стоимость:</h3>
+          </label>
+          <label for="sum">
+              <input type="range" id="count" name="count" min="0" max="15000" step="1" value="0">
+          </label>
+          <div class="output-area">
+            от <output name="sum" id="sum">0</output> до <output name="sum2">15 000</output>
+          </div>
+
+
+          <h3>Сетка</h3>
+          <ul class="network">
+            <li>
+              <label>
+                <input type="radio" name="network-1" id="network-1" value="adapt" checked>Адаптивная
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="network-2" id="network-2" value="fixed">Фиксированная
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="network-3" id="network-3" value="rubber">Резиновая
+              </label>
+            </li>
+          </ul>
+          <h3>Особенности:</h3>
+          <ul class="features">
+            <li>
+              <label>
+                <input type="checkbox" name="feature-1" value="Slider" checked>Слайдер
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="feature-2" value="advantage">Блок преимуществ
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="feature-3" value="News" checked>Новости
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="feature-4" value="Gallery">Галерея
+          </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="feature-5" value="Cart">Корзина
+              </label>
+            </li>
+          </ul>
+      <p class="show-filter-layouts">
+      <a class="button" href="#">Показать</a>
+      </p>
+        </form>
+
       </section>
 
       <section class="templates">
