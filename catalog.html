@@ -17,7 +17,10 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="cart"><a href="#">Корзина</a></li>
+          <li class="cart">
+            <input type="image" src="img/cart-icon.svg" alt="Корзина">
+            <a href="#">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -26,14 +29,11 @@
       <section class="filter">
         <h2 class="visually-hidden">Фильтр макетов</h2>
         <form class="filter-makets" action="index.html" method="post" oninput="sum.value=count.value">
-          <label for="count">
             <h3>Стоимость:</h3>
-          </label>
-          <label for="sum">
-              <input type="range" id="count" name="count" min="0" max="15000" step="1" value="0">
-          </label>
+              <input type="range" name="count" min="0" max="15000" step="1" value="0">
           <div class="output-area">
-            от <output name="sum" id="sum">0</output> до <output name="sum2">15 000</output>
+            от <input type="text" name="sum" id="sum" value="0">
+            до <input type="text" name="cost" value="15 000">
           </div>
 
 
@@ -95,7 +95,7 @@
         <ul class="templates-list">
           <li>
             <a href="#">
-              <img src="img/sedona.png" width="360" height="576" alt="Шаблон Седоны">
+              <img src="img/sedona.jpg" width="360" height="576" alt="Шаблон Седоны">
             </a>
             <div class="templates-info">
               <a href="#"><b>Sedona</b></a>
@@ -105,7 +105,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="img/pink.png" width="360" height="576" alt="Шаблон pink">
+              <img src="img/pink.jpg" width="360" height="576" alt="Шаблон pink">
             </a>
             <div class="templates-info">
               <a href="#"><b>Pink App</b></a>
@@ -115,17 +115,17 @@
           </li>
           <li>
             <a href="#">
-              <img src="img/barbershop.png" width="360" height="576" alt="Шаблон Barbershop">
+              <img src="img/barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop">
             </a>
             <div class="templates-info">
               <a href="#"><b>Barbershop</b></a>
-              <p>Сайт салона красоты.Для мужчин, да.</p>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
               <a class="button" href="#">11 900 РУБ.</a>
             </div>
           </li>
           <li>
             <a href="#">
-              <img src="img/mishka.png" width="360" height="576" alt="Шаблон mishka">
+              <img src="img/mishka.jpg" width="360" height="576" alt="Шаблон mishka">
             </a>
             <div class="templates-info">
               <a href="#"><b>Mishka</b></a>
@@ -135,7 +135,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="img/a-plus.png" width="360" height="576" alt="Шаблон A+">
+              <img src="img/a-plus.jpg" width="360" height="576" alt="Шаблон A+">
             </a>
             <div class="templates-info">
               <a href="#"><b>A Plus</b></a>
@@ -145,7 +145,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="img/kvast.png" width="360" height="576" alt="Шаблон Кваст">
+              <img src="img/kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
             </a>
             <div class="templates-info">
               <a href="#"><b>Кваст</b></a>
