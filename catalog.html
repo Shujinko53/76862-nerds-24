@@ -25,69 +25,70 @@
     </header>
     <main class="container">
       <h1>Магазин готовых шаблонов</h1>
-      <section class="filter">
+      <section class="filters">
         <h2 class="visually-hidden">Фильтр макетов</h2>
-        <form class="filter-makets" action="index.html" method="post" oninput="sum.value=count.value">
+        <!--
+        <form class="filter-makets" action="https://echo.htmlacademy.ru" method="post" oninput="sum.value=count.value">
             <h3>Стоимость:</h3>
               <input type="range" name="count" min="0" max="15000" step="1" value="0">
           <div class="output-area">
             от <input type="text" name="sum" id="sum" value="0">
             до <input type="text" name="cost" value="15 000">
-          </div>
-
-
-          <h3>Сетка</h3>
-          <ul class="network">
-            <li>
-              <label>
-                <input type="radio" name="network-choice" id="network-1" value="adapt" checked>Адаптивная
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="network-choice" id="network-2" value="fixed">Фиксированная
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="network-choice" id="network-3" value="rubber">Резиновая
-              </label>
-            </li>
+          </div>-->
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Сетка</legend>
+            <ul>
+              <li class="filter-option">
+                <label>Адаптивная
+                  <input class="filter-input filter-input-radio" type="radio" value="adaptive" name="network-choice" checked>
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>Фиксированная
+                  <input class="filter-input filter-input-radio" type="radio" value="fixed" name="network-choice">
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>Резиновая
+                  <input class="filter-input filter-input-radio" type="radio" value="rubber" name="network-choice">
+                </label>
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>Слайдер
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="feature-slider" checked>
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>Блок преимуществ
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="feature-advantages">
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>Новости
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="feature-news" checked>
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>Галерея
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="feature-gallery">
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>Корзина
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="feature-cart">
+                </label>
+              </li>
           </ul>
-          <h3>Особенности:</h3>
-          <ul class="features">
-            <li>
-              <label>
-                <input type="checkbox" name="feature-1" value="Slider" checked>Слайдер
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="feature-2" value="advantage">Блок преимуществ
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="feature-3" value="News" checked>Новости
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="feature-4" value="Gallery">Галерея
-          </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="feature-5" value="Cart">Корзина
-              </label>
-            </li>
-          </ul>
-      <p class="show-filter-layouts">
-      <a class="button" href="#">Показать</a>
-      </p>
-        </form>
-
-      </section>
+        </fieldset>
+        <button class="button" type="submit">Показать</button>
+      </form>
+    </section>
 
       <section class="templates">
         <h2 class="visually-hidden">Список шаблонов</h2>
@@ -160,26 +161,17 @@
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
       </section>
-      <!--
-      <section class="clients">
-        <ul class="clients-list">
-          <li><img src="img\logo-1.png" alt="HTML Academy"></li>
-          <li><img src="img\logo-2.png" alt="Barbershop"></li>
-          <li><img src="img\logo-3.png" alt="Pink"></li>
-          <li><img src="img\logo-4.png" alt="Mishka"></li>
-        </ul>
-      </section>
 
       <section class="contacts">
-        <a href="#"><img src="img/map.png" width="1440" height="416" alt="Местонахождение Нердс"></a>
+        <h2 class="visually-hiddden">Наши контакты</h2>
+        <a href="#"><img src="img/map.jpg" width="1440" height="416" alt="Местонахождение Нердс"></a>
         <div class="contact-us">
           <b>Nёrds design studio</b>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
           <p>тел. +7 (812) 275-75-75</p>
           <a class="button" href="#">Напишите нам</a>
-           <!- The form wiil be here ->
         </div>
-      </section> -->
+      </section>
     </main>
     <footer class="main-footer">
       <ul class="social-list">
@@ -192,5 +184,30 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+
+    <section class="modal-write-us">
+      <h2 class="visually-hiddden">Напишите нам</h2>
+      <form class="" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Напишите нам</legend>
+          <p class="write-us-name">
+            <label>Ваше имя:
+              <input type="text" name="name" value="" placeholder="Имя Фамилия">
+          </label>
+          </p>
+          <p class="write-us-email">
+            <label>Ваш email:
+              <input type="email" name="email" value="" placeholder="email@example.com">
+            </label>
+          </p>
+          <p class="write-us-letter">
+            <label> Текст письма:
+              <textarea name="letter" rows="5" cols="70" placeholder="В свободной форме"></textarea>
+            </label>
+          </p>
+        </fieldset>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>

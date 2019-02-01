@@ -16,8 +16,8 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="cart">
-            <a href="#">Корзина</a>
+          <li>
+            <a class="cart" href="#">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -95,8 +95,6 @@
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
           <p>тел. +7 (812) 275-75-75</p>
           <a class="button" href="#">Напишите нам</a>
-           <!- The form wiil be here ->
-
         </div>
       </section> -->
     </main>
@@ -111,5 +109,30 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+
+    <section class="modal-write-us">
+      <h2 class="visually-hiddden">Напишите нам</h2>
+      <form class="" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Напишите нам</legend>
+          <p class="write-us-name">
+            <label>Ваше имя:
+              <input type="text" name="name" value="" placeholder="Имя Фамилия">
+          </label>
+          </p>
+          <p class="write-us-email">
+            <label>Ваш email:
+              <input type="email" name="email" value="" placeholder="email@example.com">
+            </label>
+          </p>
+          <p class="write-us-letter">
+            <label> Текст письма:
+              <textarea name="letter" rows="5" cols="70" placeholder="В свободной форме"></textarea>
+            </label>
+          </p>
+        </fieldset>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
