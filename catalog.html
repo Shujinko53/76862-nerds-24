@@ -18,7 +18,7 @@
         </ul>
         <ul class="user-navigation">
           <li class="cart">
-            <a href="#">Корзина</a>
+            <a class="cart" href="#">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -40,19 +40,16 @@
           <legend>Сетка</legend>
             <ul>
               <li class="filter-option">
-                <label>Адаптивная
-                  <input class="filter-input filter-input-radio" type="radio" value="adaptive" name="network-choice" checked>
-                </label>
+                <input class="filter-input filter-input-radio" type="radio" id="adaptive-id" value="adaptive" name="network-choice" checked>
+                <label for="adaptive-id">Адаптивная</label>
               </li>
               <li class="filter-option">
-                <label>Фиксированная
-                  <input class="filter-input filter-input-radio" type="radio" value="fixed" name="network-choice">
-                </label>
+                <input class="filter-input filter-input-radio" type="radio" id="fixed-id" value="fixed" name="network-choice">
+                <label for="fixed-id">Фиксированная</label>
               </li>
               <li class="filter-option">
-                <label>Резиновая
-                  <input class="filter-input filter-input-radio" type="radio" value="rubber" name="network-choice">
-                </label>
+                <input class="filter-input filter-input-radio" type="radio" id="rubber-id" value="rubber" name="network-choice">
+                <label for="rubber-id">Резиновая</label>
               </li>
             </ul>
         </fieldset>
@@ -60,29 +57,24 @@
           <legend>Особенности:</legend>
             <ul>
               <li class="filter-option">
-                <label>Слайдер
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="feature-slider" checked>
-                </label>
+                <input class="filter-input filter-input-checkbox" type="checkbox" id="slider-id" name="feature-slider" checked>
+                <label for="slider-id">Слайдер</label>
               </li>
               <li class="filter-option">
-                <label>Блок преимуществ
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="feature-advantages">
-                </label>
+                <input class="filter-input filter-input-checkbox" type="checkbox" id="advantages-id" name="feature-advantages">
+                <label for="advantages-id">Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <label>Новости
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="feature-news" checked>
-                </label>
+                <input class="filter-input filter-input-checkbox" type="checkbox" id="news-id" name="feature-news" checked>
+                <label for="news-id">Новости</label>
               </li>
               <li class="filter-option">
-                <label>Галерея
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="feature-gallery">
-                </label>
+                <input class="filter-input filter-input-checkbox" type="checkbox" id="gallery-id" name="feature-gallery">
+                <label for="gallery-id">Галерея</label>
               </li>
               <li class="filter-option">
-                <label>Корзина
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="feature-cart">
-                </label>
+                <input class="filter-input filter-input-checkbox" type="checkbox" id="cart-id" name="feature-cart">
+                <label for="cart-id">Корзина</label>
               </li>
           </ul>
         </fieldset>
@@ -164,7 +156,6 @@
 
       <section class="contacts">
         <h2 class="visually-hiddden">Наши контакты</h2>
-        <a href="#"><img src="img/map.jpg" width="1440" height="416" alt="Местонахождение Нердс"></a>
         <div class="contact-us">
           <b>Nёrds design studio</b>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
@@ -187,17 +178,17 @@
 
     <section class="modal-write-us">
       <h2 class="visually-hiddden">Напишите нам</h2>
-      <form class="" action="https://echo.htmlacademy.ru" method="post">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Напишите нам</legend>
           <p class="write-us-name">
             <label>Ваше имя:
-              <input type="text" name="name" value="" placeholder="Имя Фамилия">
-          </label>
+              <input type="text" name="name" placeholder="Имя Фамилия">
+            </label>
           </p>
           <p class="write-us-email">
             <label>Ваш email:
-              <input type="email" name="email" value="" placeholder="email@example.com">
+              <input type="email" name="email" placeholder="email@example.com">
             </label>
           </p>
           <p class="write-us-letter">
