@@ -1,1 +1,44 @@
+ a:hover {
+    color: #fb565a;
+}
+ 
+.filter .button {
+    width: 260px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Roboto;
+    background-color: #eeeeee;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
 
+.filter .button:hover {
+    width: 260px;
+    height: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #dfdfdf;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.filter button:active {
+    width: 260px;
+    height: 50px;
+    font-size: 16px;
+    font-family: Roboto;
+    opacity: 0.3;
+    font-weight: 500;
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5; 
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3);
+}
