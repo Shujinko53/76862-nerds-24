@@ -43,6 +43,10 @@
     line-height: 20px;
     color: #283136;
 }
+/*
+.filter input {
+    display: none;
+}*/
 
 .filter-input:hover + label,
 .filter-input:focus + label {
@@ -61,12 +65,12 @@
     content: url(../img/radio-off.svg)
 }
 
-.filter-input-checkbox::before {
-    content: url(../img/checkbox-off.svg)
+.filter-input-checkbox:checked::before {
+    content: url(../img/checkbox-on.svg);
 }
 
-.filter-input-checkbox:checked::before {
-    content: url(../img/checkbox-on.svg)
+.filter-input-checkbox::before {
+    content: url(../img/checkbox-off.svg)
 }
 
 .filters .button {
@@ -99,7 +103,17 @@
     list-style: none;
 }
 
+.templates-list > li:hover .templates-info {
+    display: block;
+}
+
 .templates-info {
+    position: relative;
+    bottom: 110px;
+    left: 0px;
+    z-index: 10;
+    display: none;
+
     background-color: #eeeeee;
 }
 
