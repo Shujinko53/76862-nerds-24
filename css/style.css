@@ -1,44 +1,378 @@
- a:hover {
+ body {
+    margin: 0;
+
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+     background-color: #ffffff;
+}
+
+.inner-page {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.container h1{
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+
+}
+
+.inner-header {
+    background-color: #eeeeee;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.filter ul {
+    list-style: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #283136;
+}
+
+.filter-input:disabled + label {
+    color: rgba(40, 49, 54, 0.3);
+}
+
+.filters .button {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #000000;
+
+    border: none;
+    background-color: #eeeeee;
+}
+
+.filters .button:hover,
+.filters .button:focus {
+    background-color: #dfdfdf;
+}
+
+.filters .button:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
+
+.templates-list {
+    list-style: none;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.templates-info .button{
+    color: #ffffff;
+    
+    background-color: #fb565a;
+    border: none;
+}
+
+.templates-info .button:hover,
+.templates-info .button:focus {
+    color: #ffffff;
+
+    background-color: #e74246;
+}
+
+.templates-info .button:active {
+    color: #ffffff;
+
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+}
+
+
+.pagination-item a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #000000;
+
+    background: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+    background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
+
+.pagination-item-current a {
+    border: 3px solid #dbdbdb;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation img:hover,
+.main-navigation img:focus {
+    opacity: 0.8;
+}
+
+.main-navigation img:active {
+    opacity: 0.3;
+}
+
+.main-navigation {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
     color: #fb565a;
 }
- 
-.filter .button {
-    width: 260px;
-    height: 50px;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: Roboto;
-    background-color: #eeeeee;
-    line-height: 1.13;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000;
-}
 
-.filter .button:hover {
-    width: 260px;
-    height: 50px;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: #dfdfdf;
-    line-height: 1.13;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000;
-}
-
-.filter button:active {
-    width: 260px;
-    height: 50px;
-    font-size: 16px;
-    font-family: Roboto;
-    opacity: 0.3;
-    font-weight: 500;
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d5d5d5; 
-    line-height: 1.13;
-    letter-spacing: normal;
-    text-align: center;
+.site-navigation a:active,
+.user-navigation a:active {
     color: rgba(0, 0, 0, 0.3);
+}
+
+.services {
+    background-color: #ffffff;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.service-site::before {
+    content: url(../img/web.jpg);
+}
+
+
+.service-apps::before {
+    content: url(../img/apps.jpg);
+}
+
+.service-present::before {
+    content: url(../img/present.jpg);
+}
+
+.service h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.service p {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.button {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.service-site .button {
+    background-color: #fb565a;
+    border: none;
+}
+
+.service-site .button:hover,
+.service-site .button:focus {
+    background-color: #e74246;
+}
+
+.service-site .button:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+}
+
+.service-apps .button {
+    background-color: #00ca74;
+    border: none;
+}
+
+.service-apps .button:hover,
+.service-apps .button:focus {
+    background-color: #00bc6c;
+}
+
+.service-apps .button:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #00aa62;
+}
+
+.service-present .button {
+    background-color: #efc84a;
+    border: none;
+}
+
+.service-present .button:hover,
+.service-present .button:focus {
+    background-color: #eab534;
+}
+
+.service-present .button:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #e5a722;
+}
+
+.about-us b {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500px;
+    color: #000000;
+}
+
+.about-our-servies {
+    list-style: none;
+}
+
+.about-us::after {
+    content: url(../img/nerd2.png);
+}
+
+.about-our-efficiency .efficiency {
+    font-size: 45px;
+    line-height: 10px;
+}
+
+.about-our-efficiency span {
+    font-size: 30px;
+    line-height: 10px;
+    vertical-align: super;
+}
+
+.clients-list{
+    list-style: none;
+}
+
+.clients-list img{
+    opacity: 0.2;
+}
+
+.clients-list img:hover,
+.clients-list img:focus {
+    opacity: 1;
+}
+
+.clients-list img:active{
+    opacity: 0.1;
+}
+
+.contact-us .button{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #fb565a;
+    border: none;
+}
+
+.contact-us .button:hover,
+.contact-us .button:focus {
+    background-color: #e74246;
+}
+
+.contact-us .button:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+}
+
+.social-list {
+    list-style: none;
+}
+
+.social-list .social {
+    color: #000000;
+    background-color: #e1e1e1;
+}
+
+.footer-benefit {
+    text-align: center;
+}
+
+.footer-benefit b {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.modal-write-us {
+    display: none;
 }
