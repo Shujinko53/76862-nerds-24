@@ -53,6 +53,22 @@
     color: rgba(40, 49, 54, 0.3);
 }
 
+.filter-input-radio:checked::before {
+    content: url(../img/radio-on.svg);
+}
+
+.filter-input-radio::before {
+    content: url(../img/radio-off.svg)
+}
+
+.filter-input-checkbox::before {
+    content: url(../img/checkbox-off.svg)
+}
+
+.filter-input-checkbox:checked::before {
+    content: url(../img/checkbox-on.svg)
+}
+
 .filters .button {
     font-size: 16px;
     line-height: 18px;
