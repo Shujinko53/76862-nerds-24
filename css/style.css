@@ -190,14 +190,10 @@
 
 .templates-info .button:hover,
 .templates-info .button:focus {
-    color: #ffffff;
-
     background-color: #e74246;
 }
 
 .templates-info .button:active {
-    color: #ffffff;
-
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     background-color: #d7373b;
 }
@@ -207,7 +203,6 @@
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
-    color: #000000;
 
     background: #eeeeee;
 }
@@ -253,11 +248,8 @@ a {
 }
 
 .main-navigation {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 16px;
     line-height: 30px;
     font-weight: 500;
-    color: #000000;
     text-transform: uppercase;
 
     background-color: #ffffff;
@@ -270,7 +262,7 @@ a {
 
 .site-navigation a,
 .user-navigation a {
-  color: #000000;
+    color: #000000;
 }
 
 .site-navigation a:hover,
@@ -323,8 +315,7 @@ a {
 }
 
 .button {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 16px;
+    font-family: inherit;
     line-height: 18px;
     font-weight: 500;
     text-align: center;
@@ -388,7 +379,6 @@ a {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500px;
-    color: #000000;
 }
 
 .about-our-servies {
@@ -428,7 +418,7 @@ a {
 }
 
 .contact-us .button{
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: inherit;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -504,8 +494,6 @@ a {
 .write-us-form input[type="email"],
 .write-us-form textarea {
   font: inherit;
-  
-  font-size: 16px;
   line-height: 18px;
   font-weight: normal;
   opacity: 0.5;
