@@ -1,7 +1,7 @@
  body {
     margin: 0;
 
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
@@ -59,7 +59,7 @@
 }
 
 .filter-input-radio:checked + label::before {
-    content: url(../img/radio-on.svg);
+    content: url("../img/radio-on.svg");
     position: relative;
     top: 8px;
     right: 10px;
@@ -68,7 +68,7 @@
 }
 
 .filter-input-radio + label::before {
-    content: url(../img/radio-off.svg);
+    content: url("../img/radio-off.svg");
     position: relative;
     top: 8px;
     right: 10px;
@@ -87,7 +87,7 @@
 }
 
 .filter-input-checkbox:checked + label::before {
-    content: url(../img/checkbox-on.svg);
+    content: url("../img/checkbox-on.svg");
     position: relative;
     top: 5px;
     right: 9px;
@@ -96,7 +96,7 @@
 }
 
 .filter-input-checkbox + label::before {
-    content: url(../img/checkbox-off.svg);
+    content: url("../img/checkbox-off.svg");
     position: relative;
     top: 5px;
     right: 9px;
@@ -286,16 +286,16 @@ a {
 }
 
 .service-site::before {
-    content: url(../img/web.jpg);
+    content: url("../img/web.jpg");
 }
 
 
 .service-apps::before {
-    content: url(../img/apps.jpg);
+    content: url("../img/apps.jpg");
 }
 
 .service-present::before {
-    content: url(../img/present.jpg);
+    content: url("../img/present.jpg");
 }
 
 .service h3 {
@@ -307,7 +307,7 @@ a {
 }
 
 .service p {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -386,7 +386,7 @@ a {
 }
 
 .about-us::after {
-    content: url(../img/nerd2.png);
+    content: url("../img/nerd2.png");
 }
 
 .about-our-efficiency .efficiency {
@@ -473,7 +473,7 @@ a {
 }
 
 .write-us-form legend::after {
-    content: url(../img/close-cross.png);
+    content: url("../img/close-cross.png");
 
     opacity: 0.3;
 }
