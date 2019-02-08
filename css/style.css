@@ -1,549 +1,487 @@
- body {
-    margin: 0;
+body {
+  margin: 0;
 
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 
-     background-color: #ffffff;
+  background-color: #ffffff;
+}
+
+.button{
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .inner-page {
-    color: #000000;
-
-    background-color: #ffffff;
 }
 
-.container h1{
-    font-size: 55px;
-    line-height: 55px;
-    color: #000000;
-
+h1 {
+  font-size: 55px;
+  line-height: 55px;
 }
 
 .inner-header {
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .filter fieldset {
-    border: none;
+  border: none;
 }
 
 .filter legend {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .filter ul {
-    list-style: none;
-    font-size: 16px;
-    line-height: 20px;
-    color: #283136;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
 }
 
 .visually-hidden {
-   visibility: hidden;;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
 }
 
-.filter-input:hover + label,
-.filter-input:focus + label {
-  color: #283136;
-  
+.filter li {
+  margin-bottom: 20px;
 }
 
 .filter-input:disabled + label {
-    color: rgba(40, 49, 54, 0.3);
+  color: rgba(40, 49, 54, 0.3);
 }
 
-.filter-input-radio:checked + label::before {
-    content: url("../img/radio-on.svg");
-    position: relative;
-    top: 8px;
-    right: 10px;
+.filter-input-radio + label {
+  position: relative;
 
-    opacity: 0.4;
+  padding-left: 45px;
 }
 
 .filter-input-radio + label::before {
-    content: url("../img/radio-off.svg");
-    position: relative;
-    top: 8px;
-    right: 10px;
+  content: url("../img/radio-off.svg");
+  position: absolute;
+  top: -2px;
+  left: 10px;
 
-    color: #4d4d4d;
-    opacity: 0.4;
+  color: #4d4d4d;
+
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked + label::before {
+  content: url("../img/radio-on.svg");
+  position: absolute;
+  top: -2px;
+  left: 10px;
+
+  opacity: 0.4;
 }
 
 .filter-input-radio + label:hover::before,
 .filter-input-radio + label:focus::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .filter-input-radio:disabled + label::before {
-    opacity: 0.1;
+  opacity: 0.1;
 }
 
-.filter-input-checkbox:checked + label::before {
-    content: url("../img/checkbox-on.svg");
-    position: relative;
-    top: 5px;
-    right: 9px;
+.filter-input-checkbox + label {
+  position: relative;
 
-    opacity: 0.4;
+  padding-left: 45px;
 }
 
 .filter-input-checkbox + label::before {
-    content: url("../img/checkbox-off.svg");
-    position: relative;
-    top: 5px;
-    right: 9px;
+  content: url("../img/checkbox-off.svg");
+  position: absolute;
+  top: -2px;
+  left: 10px;
 
-    opacity: 0.4;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: url("../img/checkbox-on.svg");
+  position: absolute;
+  top: -2px;
+  left: 10px;
+
+  opacity: 0.4;
 }
 
 .filter-input-checkbox + label:hover::before,
 .filter-input-checkbox + label:focus::before {
-    opacity: 1;
+  color: #4d4d4d;
+  opacity: 1;
 }
 
 .filter-input-checkbox:disabled + label::before {
-    opacity: 0.1;
+  opacity: 0.1;
 }
 
 .filter button {
-    width: 260px;
-    height: 50px;
+  width: 260px;
+  height: 50px;
 }
 
 .filters .button {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color: #000000;
+  color: #000000;
 
-    border: none;
-    background-color: #eeeeee;
+  background-color: #eeeeee;
+  border: none;
 }
 
 .filters button:hover,
 .filters button:focus {
-    background-color: #dfdfdf;
+  background-color: #dfdfdf;
 }
 
 .filters button:active {
-    color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d5d5d5;
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .templates-list {
-    list-style: none;
+  list-style: none;
 }
 
 .pagination-list {
-    list-style: none;
+  list-style: none;
 }
 
 .templates-list > li:hover .templates-info {
-    display: block;
+  display: block;
 }
 
 .templates-info {
-    position: relative;
-    bottom: 110px;
-    left: 0px;
-    z-index: 100;
-    display: none;
+  position: relative;
+  bottom: 110px;
+  left: 0px;
+  z-index: 100;
+  display: none;
 
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .templates-info b {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .templates-info p {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: normal;
-    color: #666666;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #666666;
 }
 
 .templates-info a {
-    width: 200px;
-    height: 50px;
+  width: 200px;
+  height: 50px;
 }
-
-.templates-info .button{
-    color: #ffffff;
-    
-    background-color: #fb565a;
-    border: none;
-}
-
-.templates-info .button:hover,
-.templates-info .button:focus {
-    background-color: #e74246;
-}
-
-.templates-info .button:active {
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d7373b;
-}
-
 
 .pagination-item a {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
 
-    background: #eeeeee;
+  background: #eeeeee;
 }
 
 .pagination-item a:hover,
 .pagination-item a:focus {
-    background-color: #dfdfdf;
+  background-color: #dfdfdf;
 }
 
 .pagination-item a:active {
-    color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d5d5d5;
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .pagination-item-current a {
-    border: 3px solid #dbdbdb;
-    color: #000000;
+  border: 3px solid #dbdbdb;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
-    color: #000000;
-
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .main-navigation img:hover,
 .main-navigation img:focus {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .main-navigation img:active {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .main-navigation {
-    line-height: 30px;
-    font-weight: 500;
-    text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .site-navigation,
 .user-navigation {
-    list-style: none;
+  list-style: none;
 }
 
 .site-navigation a,
 .user-navigation a {
-    color: #000000;
+  color: #000000;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-    color: #fb565a;
+  color: #fb565a;
 }
 
 .site-navigation a:active,
 .user-navigation a:active {
-    color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .services {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .services-list {
-    list-style: none;
+  list-style: none;
 }
 
 .service-site::before {
-    content: url("../img/web.jpg");
+  content: url("../img/web.jpg");
 }
 
 
 .service-apps::before {
-    content: url("../img/apps.jpg");
+  content: url("../img/apps.jpg");
 }
 
 .service-present::before {
-    content: url("../img/present.jpg");
+  content: url("../img/present.jpg");
 }
 
 .service h3 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #000000;
-    text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .service p {
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #000000;
-}
-
-.button {
-    font-family: inherit;
-    line-height: 18px;
-    font-weight: 500;
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
-    text-transform: uppercase;
-}
-
-.service-site .button {
-    background-color: #fb565a;
-    border: none;
-}
-
-.service-site .button:hover,
-.service-site .button:focus {
-    background-color: #e74246;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .service-site .button:active {
-    color: rgba(255, 255, 255, 0.3);
-
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .service-apps .button {
-    background-color: #00ca74;
-    border: none;
+  background-color: #00ca74;
+  border: none;
 }
 
 .service-apps .button:hover,
 .service-apps .button:focus {
-    background-color: #00bc6c;
+  background-color: #00bc6c;
 }
 
 .service-apps .button:active {
-    color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #00aa62;
+  background-color: #00aa62;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .service-present .button {
-    background-color: #efc84a;
-    border: none;
+  background-color: #efc84a;
+  border: none;
 }
 
 .service-present .button:hover,
 .service-present .button:focus {
-    background-color: #eab534;
+  background-color: #eab534;
 }
 
 .service-present .button:active {
-    color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #e5a722;
+  background-color: #e5a722;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .about-us b {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 500px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500px;
 }
 
 .about-our-servies {
-    list-style: none;
+  list-style: none;
 }
 
 .about-us::after {
-    content: url("../img/nerd2.png");
+  content: url("../img/nerd2.png");
 }
 
 .about-our-efficiency .efficiency {
-    font-size: 45px;
-    line-height: 10px;
+  font-size: 45px;
+  line-height: 10px;
 }
 
 .about-our-efficiency span {
-    font-size: 30px;
-    line-height: 10px;
-    vertical-align: super;
+  font-size: 30px;
+  line-height: 10px;
+  vertical-align: super;
 }
 
 .clients-list{
-    list-style: none;
+  list-style: none;
 }
 
 .clients-list img{
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 .clients-list img:hover,
 .clients-list img:focus {
-    opacity: 1;
+  opacity: 1;
 }
 
 .clients-list img:active{
-    opacity: 0.1;
-}
-
-.contact-us .button{
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
-    text-transform: uppercase;
-
-    background-color: #fb565a;
-    border: none;
-}
-
-.contact-us .button:hover,
-.contact-us .button:focus {
-    background-color: #e74246;
+  opacity: 0.1;
 }
 
 .contact-us .button:active {
-    color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
 
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d7373b;
+.contact-us b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700px;
+  text-transform: uppercase;
 }
 
 .social-list {
-    list-style: none;
+  list-style: none;
 }
 
 .social-list .social {
-    color: #000000;
-    background-color: #e1e1e1;
+  color: #000000;
+
+  background-color: #e1e1e1;
 }
 
 .footer-benefit {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-benefit b {
-    font-size: 36px;
-    line-height: 36px;
+  font-size: 36px;
+  line-height: 36px;
 }
 
 .modal-write-us {
-    font-weight: 700;
-    display: non;
+  font-weight: 700;
+  display: non;
 }
 
 .write-us-form legend{
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
 }
 
 .write-us-form legend::after {
-    content: url("../img/close-cross.png");
+  content: url("../img/close-cross.png");
 
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .write-us-form legend:hover::after,
 .write-us-form legend:focus::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .write-us-form legend:active::after {
-    opacity: 0.1;
+  opacity: 0.1;
 }
 .write-us-form fieldset {
-    border: none;
+  border: none;
 }
 
-.write-us-form input[type="text"],
-.write-us-form input[type="email"],
-.write-us-form textarea {
+.write-us-form .field {
   font: inherit;
   line-height: 18px;
   font-weight: normal;
-  opacity: 0.5;
   color: rgba(68, 68, 68, 0.5);
 
   background-color: #f9f6f3;
-  border: 2px solid #000000;
+  border: 2px solid #d7dcde;
+  opacity: 0.5;
 }
 
-.write-us-form button {
-    width: 260px;
-    height: 50px;
-
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    vertical-align: middle;
-    color: #ffffff;
-
-    border: none;
-    background-color: #fb565a;
+.write-us-form .field:hover {
+  border-color: #b4b9bb;
 }
 
-.write-us-form button:hover,
-.write-us-form button:focus {
-    background-color: #e74246;
+.write-us-form .field:focus {
+  color: #000000;
+
+  border-color: #000000;
 }
 
-.write-us-form button:active {
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d7373b;
-}
-
-.write-us-form input {
-    color: rgba(68, 68, 68, 0.5);
-
-    border-color: #d7dcde;
-}
-
-.write-us-form input:hover {
-    border-color: #b4b9bb;
-}
-  
-.write-us-form input:focus {
-    color: #444444;
-    border-color: #000000;
-}
-
-.write-us-form input:pattern {
-    color: #e74246;
-
-    border-color: #e74246;
+.write-us-form .field:invalid {
+  color: #e74246;
 }
