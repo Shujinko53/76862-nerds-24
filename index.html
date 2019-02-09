@@ -9,20 +9,22 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
-        <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li>
-            <a class="cart" href="#">Корзина</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-navigation-wrapped">
+        <nav class="main-navigation">
+          <img src="img/nerds-logo.svg" width="200" height="65" alt="Логотип дизайн-студии «Нёрдс»">
+          <ul class="site-navigation">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li>
+              <a class="cart" href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="container">
       <h1 class="visually-hiddden">Дизайн-студия «Нёрдс»</h1>
@@ -49,7 +51,8 @@
         </ul>
       </section>
 
-      <section class="about-us">
+    <section class="about-us-wrapped">
+      <div class="about-us">
       <h2 class="visually-hiddden">О нас</h2>
         <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
@@ -60,26 +63,30 @@
           <li>Мобильных приложений для iOS и Android </li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
+      </div>
+      <div class="efficiency-wrapped">
+        <h3>С 2004 года любим точность во всем:</h3>
+        <table class="about-our-efficiency">
+          <tr>
+            <td class="efficiency">146
+              <span class="efficiency-percent">%</span>
+            </td>
+            <td class="efficiency">100
+              <span class="efficiency-percent">%</span>
+            </td>
+            <td class="efficiency">50
+              <span class="efficiency-percent">%</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
+      </div>
       </section>
-      <h3>С 2004 года любим точность во всем:</h3>
-      <table class="about-our-efficiency">
-        <tr>
-          <td class="efficiency">146
-            <span class="efficiency-percent">%</span>
-          </td>
-          <td class="efficiency">100
-            <span class="efficiency-percent">%</span>
-          </td>
-          <td class="efficiency">50
-            <span class="efficiency-percent">%</span>
-          </td>
-        </tr>
-        <tr>
-          <td>Уровень самоотдачи</td>
-          <td>Соблюдение сроков</td>
-          <td>Минимальная предоплата</td>
-        </tr>
-      </table>
+    </section>
       <section class="clients">
         <h2 class="visually-hiddden">Наши Клиенты</h2>
         <ul class="clients-list">

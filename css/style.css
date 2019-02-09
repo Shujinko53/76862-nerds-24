@@ -12,6 +12,10 @@ body ul {
   list-style: none;
 }
 
+.visually-hiddden {
+  display: none;
+}
+
 .button {
   font-weight: 500;
   font-size: 16px;
@@ -282,6 +286,10 @@ a {
   opacity: 0.3;
 }
 
+.user-navigation {
+  margin-left: auto;
+}
+
 .site-navigation a,
 .user-navigation a {
   color: #000000;
@@ -370,8 +378,13 @@ a {
   line-height: 45px;
 }
 
-.about-us::after {
+.about-our-servies li {
+  margin-bottom: 30px;
+}
+
+.efficiency-wrapped h3::before {
   content: url("../img/nerd2.png");
+  margin-bottom: 45px;
 }
 
 .about-our-efficiency .efficiency {
@@ -480,4 +493,126 @@ a {
   padding: 19px 85px 15px 83px;
 
   line-height: 18px;
+}
+
+/* Сеточные стили */
+
+.main-navigation-wrapped {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 83px;
+  padding: 0 20px;
+
+  width: 1200px;
+
+  border: 1px solid #9f7dec;
+  background-color: rgba(233, 57, 130, 0.2);
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  width: 560px;
+
+  border: 1px solid #4b98c2;
+  background-color: rgba(44, 178, 231, 0.3);
+}
+
+.site-navigation li {
+  margin-right: 50px;
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  width: 160px;
+
+  border: 1px solid #1cf040;
+  background-color: rgba(63, 231, 47, 0.2);
+}
+
+.user-navigation li {
+  align-self: center;
+}
+
+ /*Сеточная разметка котейнера*/
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 162px;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 80px;
+
+  width: 1100px;
+
+  border: 1px solid black;
+  background-color: rgba(56, 206, 42, 0.2);
+}
+
+.services-list li {
+  width: 300px;
+}
+
+.service p {
+  margin-bottom: 35px;
+}
+
+.about-us-wrapped {
+  display: flex;
+  justify-content: center;
+}
+
+.about-us {
+  width: 660px;
+
+  border: 1px solid greenyellow;
+}
+
+.efficiency-wrapped {
+  align-self: flex-end;
+  width: 500px;
+
+  border: 1px solid red;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+
+  width: 1160px;
 }
