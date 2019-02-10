@@ -8,7 +8,11 @@ body {
 
 a {
   text-decoration: none;
+
+  font-weight: 500;
   color: #000000;
+
+  border-radius: 3px;
 }
 
 .visually-hidden {
@@ -35,6 +39,8 @@ a {
 }
 
 .button:active {
+  color: rgba(255, 255, 255, 0.3);
+
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
@@ -203,8 +209,10 @@ a {
 }
 
 .templates-info {
-  display: none;
+  position: absolute;
   bottom: 6px;
+
+  display: none;
 
   padding: 0 60px;
 
@@ -216,8 +224,6 @@ a {
 }
 
 .templates-list > li:hover .templates-info {
-  position: absolute;
-
   display: block;
 }
 
@@ -229,9 +235,8 @@ a {
 }
 
 .templates-info p {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
-  font-weight: 400;
   line-height: 18px;
   color: #666666;
 }
@@ -242,35 +247,9 @@ a {
 
 .pagination-item a {
   display: inline-block;
-  font-weight: 500px;
-}
-
-.pagination-item-current a {
-  padding: 16px 20px;
-
-  font-weight: 500;
-
-  background-color: #eeeeee;
-  border-radius: 3px;
-}
-
-.pagination-other-pages a {
   padding: 19px 21px;
 
-  font-weight: 500;
-
-  background-color: #eeeeee;
-  border-radius: 3px;
-}
-
-
-.pagination-next-page a {
-  padding: 19px 79px 16px 78px;
-
-  font-weight: 500;
-
-  background-color: #eeeeee;
-  border-radius: 3px;
+  background-color: #eeeeee
 }
 
 .pagination-item a:hover,
@@ -286,6 +265,8 @@ a {
 }
 
 .pagination-item-current a {
+  padding: 16px 20px;
+
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
 }
@@ -293,8 +274,14 @@ a {
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
+  color: #000000;
+
   background-color: #ffffff;
   box-shadow: none;
+}
+
+.pagination-next-page a {
+  padding: 19px 79px 16px 78px;
 }
 
 
@@ -403,10 +390,6 @@ a {
   padding: 19px 45px;
 }
 
-.contact-us .button:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
 .contact-us b {
   font-weight: 700px;
   font-size: 18px;
@@ -425,28 +408,13 @@ a {
 
 .modal-write-us {
   font-weight: 700;
-  display: none;
+  display:
 }
 
 .write-us-form b {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-}
-
-.write-us-form button {
-  background-color: #ffffff;
-  border: none;
-  opacity: 0.3;
-}
-
-.write-us-form b:hover::after,
-.write-us-form b:focus::after {
-  opacity: 1;
-}
-
-.write-us-form b:active::after {
-  opacity: 0.1;
 }
 
 .write-us-form fieldset {
@@ -544,7 +512,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 162px;
+  padding-bottom: 162px;
 }
 
 .services-list {
@@ -561,8 +529,10 @@ a {
   background-color: rgba(56, 206, 42, 0.2);
 }
 
-.services-list li {
+.service {
   width: 300px;
+
+  border: 1px solid red;
 }
 
 .service p {
