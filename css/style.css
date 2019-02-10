@@ -343,6 +343,9 @@ a {
 .efficiency-wrapped h3::before {
   content: url("../img/nerd2.png");
   margin-bottom: 45px;
+
+  width: 208px;
+  height: 140px;
 }
 
 .about-our-efficiency .efficiency {
@@ -382,7 +385,6 @@ a {
 .social-link {
   display: block;
   position: relative;
-  padding: 29px 29px;
 
   width: 78px;
   height: 78px;
@@ -472,18 +474,18 @@ a {
   line-height: 45px;
 }
 
-.write-us-form button {
+.write-us-form .cross {
   background-color: #ffffff;
   border: none;
   opacity: 0.3;
 }
 
-.write-us-form button:hover,
-.write-us-form button:focus {
+.write-us-form .cross:hover,
+.write-us-form .cross:focus {
   opacity: 1;
 }
 
-.write-us-form button:active {
+.write-us-form .cross:active {
   opacity: 0.1;
 }
 
@@ -576,6 +578,36 @@ a {
   align-self: center;
 }
 
+.main-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  width: 1160px;
+  height: 217px;
+
+  border: 1px solid goldenrod;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+
+  border: 1px solid yellowgreen;
+  background-color: rgba(209, 100, 27, 0.1);
+}
+
+.footer-benefit {
+  margin-right: 200px;
+  width: 560px;
+
+  border: 1px solid red;
+  background-color: rgba(49, 218, 218, 0.1);
+}
+
  /*Сетка контейнера главной страницы*/
 
 .services {
@@ -593,7 +625,7 @@ a {
   padding-left: 20px;
   padding-right: 80px;
 
-  width: 1100px;
+  width: 1160px;
 
   border: 1px solid black;
   background-color: rgba(56, 206, 42, 0.2);
@@ -611,18 +643,26 @@ a {
 
 .about-us-wrapped {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+
+  width: 1160px;
+
+  border: 1px solid red;
 }
 
 .about-us {
   width: 660px;
+  height: 369px;
 
   border: 1px solid greenyellow;
 }
 
 .efficiency-wrapped {
-  align-self: flex-end;
+  flex-direction: column;
   width: 500px;
+  height: 409px;
 
   border: 1px solid red;
 }
