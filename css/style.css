@@ -380,11 +380,12 @@ a {
 }
 
 .social-link {
-  display: inline-block;
+  display: block;
+  position: relative;
   padding: 29px 29px;
 
-  width: 80px;
-  height: 80px;
+  width: 78px;
+  height: 78px;
   background-color: #e1e1e1;
   background-repeat: no-repeat;
   border-radius: 100px;
@@ -403,10 +404,13 @@ a {
 .social-vk::before {
   content: "";
   position: absolute;
-  width: 26px;
-  height: 15px;
+
+  width: 100%;
+  height: 100%;
 
   background-image: url("../img/vk-icon.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .social-vk:active::before {
@@ -417,20 +421,32 @@ a {
   content: "";
   position: absolute;
 
-  width: 12px;
-  height: 22px;
+  width: 100%;
+  height: 100%;
 
   background-image: url("../img/fb-icon.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.social-fb:active::before {
+  opacity: 0.3;
 }
 
 .social-list .social-inst::before {
   content: "";
   position: absolute;
 
-  width: 21px;
-  height: 21px;
+  width: 100%;
+  height: 100%;
 
   background-image: url("../img/insta-icon.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.social-inst:active::before {
+  opacity: 0.3;
 }
 
 .social-list .social-inst:active::before {
