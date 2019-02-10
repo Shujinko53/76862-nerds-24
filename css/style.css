@@ -77,6 +77,7 @@ a {
   font-size: 55px;
   line-height: 55px;
 }
+
 .filter fieldset {
   border: none;
 }
@@ -134,7 +135,6 @@ a {
 
   width: 25px;
   height: 25px;
-  color: #4d4d4d;
 
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
@@ -154,7 +154,6 @@ a {
 
   width: 26px;
   height: 23px;
-  color: #4d4d4d;
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
