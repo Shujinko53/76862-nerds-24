@@ -4,6 +4,8 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
+
+  box-sizing: padding-box;
 }
 
 a {
@@ -73,6 +75,25 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.user-navigation .cart {
+  position: relative;
+  padding-left: 86px;
+}
+
+.cart::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 46px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  position: 0 0;
+}
 
 /* Стили внутренней страницы */
 
@@ -228,8 +249,7 @@ a {
 }
 
 .pagination-item a {
-  display: inline-block;
-  padding: 19px 21px;
+  padding: 20px 20px;
 
   background-color: #eeeeee
 }
@@ -293,7 +313,7 @@ a {
 }
 
 .service .button {
-  padding: 19px 40px;
+  padding: 17px 40px;
 
   color: #ffffff;
 }
@@ -340,12 +360,15 @@ a {
   margin-bottom: 30px;
 }
 
-.efficiency-wrapped h3::before {
-  content: url("../img/nerd2.png");
-  margin-bottom: 45px;
+.efficiency-wrapped::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
 
-  width: 208px;
-  height: 140px;
+  background-image: url("../img/nerd2.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .about-our-efficiency .efficiency {
@@ -552,19 +575,14 @@ a {
   margin: 0;
   padding: 0;
 
-  width: 560px;
+  width: 440px;
 
   border: 1px solid #4b98c2;
   background-color: rgba(44, 178, 231, 0.3);
 }
 
-.site-navigation li {
-  margin-right: 50px;
-}
-
 .user-navigation {
   display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
 
@@ -600,21 +618,27 @@ a {
   background-color: rgba(209, 100, 27, 0.1);
 }
 
+.main-footer {
+  margin-top: 80px;
+}
+
 .footer-benefit {
   margin-right: 200px;
   width: 560px;
 
-  border: 1px solid red;
+  border: 3px solid red;
   background-color: rgba(49, 218, 218, 0.1);
 }
 
  /*Сетка контейнера главной страницы*/
 
 .services {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 162px;
+  margin: 0 auto;
+  margin-bottom: 162px;
+  padding-left: 20px;
+  padding-right: 80px;
+
+  width: 1160px;
 }
 
 .services-list {
@@ -622,19 +646,15 @@ a {
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 80px;
 
-  width: 1160px;
-
-  border: 1px solid black;
+  border: 3px solid black;
   background-color: rgba(56, 206, 42, 0.2);
 }
 
 .service {
   width: 300px;
 
-  border: 1px solid red;
+  border: 3px solid red;
 }
 
 .service p {
@@ -644,27 +664,50 @@ a {
 .about-us-wrapped {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   margin: 0 auto;
+  padding: 0 20px;
 
   width: 1160px;
 
-  border: 1px solid red;
+  border: 3px solid red;
 }
 
 .about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 660px;
-  height: 369px;
 
-  border: 1px solid greenyellow;
+  border: 3px solid greenyellow;
+}
+
+.about-us b {
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  margin-bottom: 20px;
 }
 
 .efficiency-wrapped {
-  flex-direction: column;
-  width: 500px;
-  height: 409px;
+  position: relative;
 
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 360px;
+
+  border: 3px solid rgba(17, 97, 218, 0.3);
+}
+
+.efficiency-wrapped h3 {
+  margin-bottom: 50px;
+}
+
+.about-our-efficiency {
+  padding-bottom: 45px;
 }
 
 .clients {
@@ -682,3 +725,60 @@ a {
 }
 
 /*Сетка контейнера внутренней страницы*/
+
+.page-title {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+
+  border: 3px solid rgba(17, 97, 218, 0.3);
+}
+
+.filter {
+  width: 260px;
+}
+
+.templates {
+  display: flex;
+  flex-direction: column;
+
+  width: 760px;
+}
+
+.templates-list {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.templates-list li {
+  margin-bottom: 25px;
+  margin-right: 20px;
+
+  width: 360px;
+}
+
+.templates-list:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  margin-top: 60px;
+
+  display: flex;
+  justify-content: flex-start;
+
+  width: 460px;
+
+  border: 3px solid rgba(236, 186, 21, 0.3);
+}
+
+.pagination-item {
+  margin-right: 10px;
+}
