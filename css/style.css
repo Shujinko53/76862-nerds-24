@@ -56,7 +56,6 @@ a {
 
 .main-navigation {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
@@ -83,7 +82,6 @@ a {
 
 .site-navigation {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 440px;
 
@@ -122,13 +120,6 @@ a {
 
   background-color: #eeeeee;
   outline: 3px solid red;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .slider {
