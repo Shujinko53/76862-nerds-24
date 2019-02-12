@@ -373,7 +373,6 @@ a {
 }
 
 .services {
-  margin: 0 auto;
   margin-bottom: 162px;
   padding: 0 20px;
 
@@ -385,7 +384,6 @@ a {
   flex-direction: row;
   align-content: center;
   justify-content: flex-start;
-  margin: 0;
   padding: 0 60px 0 0;
 
   outline: 3px solid #d81f66;
@@ -466,7 +464,6 @@ a {
 .about-us-wrapped {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   padding: 0 20px;
 
   outline: 3px solid red;
