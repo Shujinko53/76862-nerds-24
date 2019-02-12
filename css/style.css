@@ -93,15 +93,14 @@ a {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   width: 485px;
   margin-right: 45px;
 
   outline: 3px solid #4b98c2;
 }
 
-.site-navigation li {
+.site-navigation li,
+.user-navigation li {
   margin-left: 45px;
 }
 
@@ -114,13 +113,9 @@ a {
   outline: 3px solid #1cf040;
 }
 
-.user-navigation .cart {
+.cart {
   position: relative;
   padding-left: 41px;
-}
-
-.user-navigation li {
-  margin-left: 45px;
 }
 
 .cart::before {
