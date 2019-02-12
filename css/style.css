@@ -58,7 +58,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 49px 20px 0;
+  padding-top: 49px;
 
   font-weight: 500;
   line-height: 30px;
@@ -77,12 +77,15 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.main-navigation img {
+  padding-bottom: 18px;
+}
+
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  width: 440px;
-
   align-items: center;
+  width: 440px;
 
   outline: 3px solid #4b98c2;
 }
@@ -90,6 +93,7 @@ a {
 .user-navigation {
   display: flex;
   width: 160px;
+
   outline: 3px solid #1cf040;
 }
 
@@ -125,7 +129,11 @@ a {
   background-color: #eeeeee;
 }
 
+
+/*Стили внутренней страница*/
+
 .inner-page ul {
+  padding: 0;
   list-style: none;
 }
 
@@ -351,12 +359,13 @@ a {
 /* Стили главной страницы */
 
 .main-page ul {
+  padding: 0;
+
   list-style: none;
 }
 
 .services {
   margin-bottom: 162px;
-  padding: 0 20px;
 
   outline: 3px solid #9f7dec;
 }
@@ -446,7 +455,6 @@ a {
 .about-us-wrapped {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
 
   outline: 3px solid red;
 }
@@ -531,7 +539,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 20px;
+  margin: 0 20px;
 }
 
 .clients-list a {
