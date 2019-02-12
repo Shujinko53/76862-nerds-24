@@ -4,6 +4,11 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  min-width: 1200px;
+}
+
+.container {
+  width: 1160px;
 }
 
 a {
@@ -17,6 +22,8 @@ a {
 
 .visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
   clip: rect(0, 0, 0, 0);
 }
 
@@ -47,9 +54,21 @@ a {
 }
 
 .main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 56px;
+  padding: 0 20px;
+
+  width: 1200px;
+
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
+
+  outline: 3px solid #9f7dec;
 }
 
 .main-navigation a:hover,
@@ -60,6 +79,30 @@ a {
 
 .main-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 440px;
+
+  outline: 3px solid #4b98c2;
+}
+
+.user-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  width: 160px;
+
+  outline: 3px solid #1cf040;
 }
 
 .user-navigation .cart {
@@ -81,7 +124,25 @@ a {
   background-repeat: no-repeat;
 }
 
-/* Стили внутренней страницы */
+.main-header {
+  margin-bottom: 80px;
+
+  background-color: #eeeeee;
+  outline: 3px solid red;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: relative;
+
+  background-color: #eeeeee;
+}
 
 .inner-page ul {
   margin: 0;
@@ -93,6 +154,10 @@ a {
 .inner-page h1 {
   font-size: 55px;
   line-height: 55px;
+}
+
+.filter {
+  width: 260px;
 }
 
 .filter fieldset {
@@ -193,8 +258,31 @@ a {
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
+.templates {
+  display: flex;
+  flex-direction: column;
+
+  width: 760px;
+}
+
+.templates-list {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.templates-list:nth-child(2n) {
+  margin-right: 0;
+}
+
 .templates-list li {
   position: relative;
+  margin-bottom: 25px;
+  margin-right: 20px;
+
+  width: 360px;
 }
 
 .templates-info {
@@ -232,6 +320,21 @@ a {
 
 .templates-info .button {
   padding: 19px 60px 19px 62px;
+}
+
+.pagination-list {
+  margin-top: 60px;
+
+  display: flex;
+  justify-content: flex-start;
+
+  width: 460px;
+
+  outline: 3px solid rgba(236, 186, 21, 0.3);
+}
+
+.pagination-item {
+  margin-right: 10px;
 }
 
 .pagination-item a {
@@ -279,6 +382,38 @@ a {
   list-style: none;
 }
 
+.services {
+  margin: 0 auto;
+  margin-bottom: 162px;
+  padding: 0 20px;
+
+  outline: 3px solid #9f7dec;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0 60px 0 0;
+
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+
+  outline: 3px solid #d81f66;
+}
+
+.services-list li {
+  margin-right: 100px;
+
+  width: 300px;
+}
+
+.service {
+  width: 300px;
+
+  outline: 3px solid red;
+}
+
 .service-site::before {
   content: url("../img/web.jpg");
 }
@@ -296,6 +431,10 @@ a {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.service p {
+  margin-bottom: 35px;
 }
 
 .service .button {
@@ -336,6 +475,26 @@ a {
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
+.about-us-wrapped {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  outline: 3px solid red;
+}
+
+.about-us {
+  margin: 0;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 660px;
+
+  outline: 3px solid greenyellow;
+}
+
 .about-us b {
   font-weight: 500;
   font-size: 45px;
@@ -344,6 +503,20 @@ a {
 
 .about-our-servies li {
   margin-bottom: 30px;
+}
+
+.efficiency-wrapped {
+  position: relative;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 360px;
+
+  outline: 3px solid rgba(17, 97, 218, 0.3);
 }
 
 .efficiency-wrapped::before {
@@ -357,14 +530,42 @@ a {
   background-position: 0 0;
 }
 
-.about-our-efficiency .efficiency {
+.efficiency-wrapped h3 {
+  margin-top: 250px;
+  margin-bottom: 50px;
+
+  outline: 3px solid rgba(86, 131, 199, 0.3);
+}
+
+.about-our-efficiency tr {
+  outline: 3px solid rgba(24, 179, 50, 0.3);
+}
+
+.efficiency {
+  padding-bottom: 30px;
+
   font-size: 45px;
   line-height: 10px;
+  vertical-align: middle;
+
+  outline: 3px solid rgba(17, 97, 218, 0.3);
 }
 
 .about-our-efficiency span {
   font-size: 30px;
   vertical-align: super;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .clients-list a {
@@ -389,6 +590,27 @@ a {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 80px auto 0;
+  padding: 0 20px;
+
+  width: 1160px;
+  height: 217px;
+
+  outline: 3px solid goldenrod;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+
+  outline: 3px solid yellowgreen;
 }
 
 .social-link {
@@ -465,7 +687,12 @@ a {
 }
 
 .footer-benefit {
+  margin-right: 200px;
+
+  width: 560px;
   text-align: center;
+
+  outline: 3px solid red;
 }
 
 .footer-benefit b {
@@ -527,246 +754,4 @@ a {
   padding: 19px 85px 15px 83px;
 
   line-height: 18px;
-}
-
-/* Сеточные стили */
-.main-header {
-  margin-bottom: 80px;
-
-  height: 545px;
-  background-color: rgba(56, 97, 231, 0.2);
-  border: 3px solid red;
-}
-
-.main-navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 56px;
-  padding: 0 20px;
-
-  width: 1200px;
-
-  outline: 3px solid #9f7dec;
-}
-
-.site-navigation {
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 440px;
-
-  outline: 3px solid #4b98c2;
-}
-
-.user-navigation {
-  display: flex;
-  margin: 0;
-  padding: 0;
-
-  width: 160px;
-
-  outline: 3px solid #1cf040;
-}
-
-.user-navigation li {
-  align-self: center;
-}
-
-.main-footer {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  width: 1160px;
-  height: 217px;
-
-  outline: 3px solid goldenrod;
-}
-
-.social-list {
-  display: flex;
-  flex-direction: row;
-  margin-right: auto;
-
-  outline: 3px solid yellowgreen;
-}
-
-.main-footer {
-  margin-top: 80px;
-}
-
-.footer-benefit {
-  margin-right: 200px;
-  width: 560px;
-
-  outline: 3px solid red;
-}
-
- /*Сетка контейнера главной страницы*/
-
-.services {
-  margin: 0 auto;
-  margin-bottom: 162px;
-  padding: 0 20px;
-
-  width: 1200px;
-
-  outline: 3px solid #9f7dec;
-}
-
-.services-list {
-  margin: 0;
-  padding: 0 60px 0 0;
-
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: flex-start;
-
-  outline: 3px solid #d81f66;
-}
-
-.services-list li {
-  margin-right: 100px;
-
-  width: 300px;
-}
-
-.service {
-  width: 300px;
-
-  border: 3px solid red;
-}
-
-.service p {
-  margin-bottom: 35px;
-}
-
-.about-us-wrapped {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  width: 1160px;
-
-  outline: 3px solid red;
-}
-
-.about-us {
-  margin: 0;
-  padding-top: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 660px;
-
-  outline: 3px solid greenyellow;
-}
-
-.efficiency-wrapped {
-  position: relative;
-  padding-bottom: 20px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 360px;
-
-  outline: 3px solid rgba(17, 97, 218, 0.3);
-}
-
-.efficiency-wrapped h3 {
-  margin-top: 250px;
-  margin-bottom: 50px;
-
-  outline: 3px solid rgba(86, 131, 199, 0.3);
-}
-
-.about-our-efficiency tr {
-  outline: 3px solid rgba(24, 179, 50, 0.3);
-}
-
-.about-our-efficiency td {
-  padding-bottom: 30px;
-
-  vertical-align: middle;
-  outline: 3px solid rgba(17, 97, 218, 0.3);
-}
-
-.efficiency {
-  vertical-align: middle;
-}
-
-.clients {
-  display: flex;
-  justify-content: center;
-}
-
-.clients-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 20px;
-
-  width: 1160px;
-}
-
-/*Сетка контейнера внутренней страницы*/
-
-.filter {
-  width: 260px;
-}
-
-.templates {
-  display: flex;
-  flex-direction: column;
-
-  width: 760px;
-}
-
-.templates-list {
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.templates-list li {
-  margin-bottom: 25px;
-  margin-right: 20px;
-
-  width: 360px;
-}
-
-.templates-list:nth-child(2n) {
-  margin-right: 0;
-}
-
-.pagination-list {
-  margin-top: 60px;
-
-  display: flex;
-  justify-content: flex-start;
-
-  width: 460px;
-
-  outline: 3px solid rgba(236, 186, 21, 0.3);
-}
-
-.pagination-item {
-  margin-right: 10px;
 }
