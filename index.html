@@ -149,15 +149,13 @@
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <b>Напишите нам</b>
         <button class="cross" type="reset"><img src="img/close-cross.png" width="21" height="21" alt="Крестик"></button>
-        <p class="write-us-name">
-          <label>Ваше имя:
-            <input class="field" type="text" name="name" placeholder="Имя Фамилия">
-          </label>
+        <p class="write-item write-us-name">
+          <label for="name">Ваше имя: </label>
+          <input class="field" type="text" name="name" id="name" placeholder="Имя Фамилия">
         </p>
-        <p class="write-us-email">
-          <label>Ваш email:
-            <input class="field" type="email" name="email" placeholder="email@example.com">
-          </label>
+        <p class="write-item write-us-email">
+          <label for="email">Ваш email:</label>
+          <input class="field" type="email" name="email" id="email" placeholder="email@example.com">
         </p>
         <p class="write-us-letter">
           <label for="letter">Текст письма:</label>

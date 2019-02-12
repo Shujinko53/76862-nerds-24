@@ -700,11 +700,92 @@ a {
   line-height: 36px;
 }
 
+/* Временно*/
+
+.main-footer {
+  margin-bottom: 50px;
+}
+
+/*--------*/
+
 .modal-write-us {
-  font-weight: 700;
+  margin: 0 auto;
+
+  max-width: 960px;
+  outline: 3px dotted #00aa62;
+}
+
+.write-us-form {
+  padding: 0 80px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 760px;
 }
 
 .write-us-form b {
+  padding-right: 250px;
+}
+
+.write-us-form .write-item {
+  margin: 0;
+  margin-bottom: 34px;
+
+  width: 360px;
+
+  /* Временно*/
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+.write-us-form p label{
+  margin-bottom: 9px;
+
+  display: block;
+}
+
+.write-item input {
+  padding: 16px 20px 18px 14px;
+  box-sizing: border-box;
+  width: 360px;
+}
+
+.write-us-letter {
+  margin: 0;
+  margin-bottom: 47px;
+  width: 760px;
+
+  /* Временно*/
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+.write-us-letter textarea {
+  padding: 13px 20px 85px 13px;
+
+  box-sizing: border-box;
+  width: 760px;
+}
+
+
+
+
+
+
+
+
+
+/*--------*/
+
+.write-us-form .cross {
+  margin: 78px 0 53px;
+}
+
+.write-us-form b {
+  margin: 66px 0 36px;
+
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -731,7 +812,6 @@ a {
 
 .write-us-form .field {
   font: inherit;
-  font-weight: 400;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.5);
 
@@ -751,7 +831,12 @@ a {
 }
 
 .write-us-form .button {
+  margin-bottom: 84px;
   padding: 19px 85px 15px 83px;
 
   line-height: 18px;
+
+  outline: 2px solid rgba(219, 36, 36, 0.5);
 }
+
+
