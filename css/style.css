@@ -7,6 +7,19 @@ body {
   line-height: 24px;
 }
 
+body ul {
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-header {
+  margin-bottom: 80px;
+
+  background-color: #eeeeee;
+  outline: 3px solid red;
+}
+
 a {
   text-decoration: none;
 
@@ -83,9 +96,11 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 440px;
+  margin-right: 45px;
 
   outline: 3px solid #4b98c2;
 }
@@ -116,13 +131,6 @@ a {
   background-repeat: no-repeat;
 }
 
-.main-header {
-  margin-bottom: 80px;
-
-  background-color: #eeeeee;
-  outline: 3px solid red;
-}
-
 .slider {
   position: relative;
 
@@ -131,11 +139,6 @@ a {
 
 
 /*Стили внутренней страница*/
-
-.inner-page ul {
-  padding: 0;
-  list-style: none;
-}
 
 .inner-page h1 {
   font-size: 55px;
@@ -358,12 +361,6 @@ a {
 
 /* Стили главной страницы */
 
-.main-page ul {
-  padding: 0;
-
-  list-style: none;
-}
-
 .services {
   margin-bottom: 162px;
 
@@ -385,8 +382,13 @@ a {
   margin-right: 100px;
 }
 
+.services-list li:last-child {
+  margin-right: 60px;
+}
+
 .service {
   width: 300px;
+  margin-bottom: 27px;
 
   outline: 3px solid red;
 }
