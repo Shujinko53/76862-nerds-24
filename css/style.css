@@ -1,14 +1,10 @@
 body {
+  min-width: 1200px;
   margin: 0;
 
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  min-width: 1200px;
-}
-
-.container {
-  width: 1160px;
 }
 
 a {
@@ -18,6 +14,12 @@ a {
   color: #000000;
 
   border-radius: 3px;
+}
+
+.container {
+  margin: 0;
+
+  width: 1160px;
 }
 
 .visually-hidden {
@@ -59,8 +61,7 @@ a {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 56px;
-  padding: 0 20px;
+  padding: 49px 20px 0;
 
   width: 1200px;
 
@@ -700,14 +701,6 @@ a {
   line-height: 36px;
 }
 
-/* Временно*/
-
-.main-footer {
-  margin-bottom: 50px;
-}
-
-/*--------*/
-
 .modal-write-us {
   margin: 0 auto;
 
@@ -734,10 +727,6 @@ a {
   margin-bottom: 34px;
 
   width: 360px;
-
-  /* Временно*/
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .write-us-form p label{
@@ -756,10 +745,6 @@ a {
   margin: 0;
   margin-bottom: 47px;
   width: 760px;
-
-  /* Временно*/
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .write-us-letter textarea {
@@ -768,14 +753,6 @@ a {
   box-sizing: border-box;
   width: 760px;
 }
-
-
-
-
-
-
-
-
 
 /*--------*/
 
