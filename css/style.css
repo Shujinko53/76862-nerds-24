@@ -7,7 +7,8 @@ body {
   line-height: 24px;
 }
 
-body ul {
+.main-page ul {
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -25,10 +26,6 @@ a {
 .container {
   max-width: 1160px;
   margin: 0 auto;
-
-  /* Временно */
-  outline: 2px solid #1cf040;
-  background-color: rgba(231, 235, 46, 0.3);
 }
 
 .visually-hidden {
@@ -65,23 +62,32 @@ a {
 }
 
 .main-header {
-  margin-bottom: 80px;
   padding: 49px 0 18px;
 
   background-color: #eeeeee;
-  outline: 3px solid red;
+}
+
+.main-header h1 {
+  margin: 77px 0 100px;
+
+  text-align: center;
+
+  outline: 3px solid #1cf040;
 }
 
 .main-navigation {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
+}
 
-  outline: 3px solid #9f7dec;
+.main-navigation ul {
+  margin: 0;
+  padding: 27px 0 0;
 }
 
 .main-navigation img {
@@ -104,15 +110,11 @@ a {
   justify-content: space-between;
   width: 485px;
   margin-right: 45px;
-
-  outline: 3px solid #4b98c2;
 }
 
 .site-navigation li,
 .user-navigation li {
   margin-left: 45px;
-
-  outline: 3px solid #da4d0c;
 }
 
 .user-navigation {
@@ -120,8 +122,6 @@ a {
   justify-content: flex-end;
   flex-wrap: wrap;
   width: 160px;
-
-  outline: 3px solid #1cf040;
 }
 
 .cart {
@@ -140,7 +140,6 @@ a {
   height: 15px;
 
   background-image: url("../img/cart-icon.svg");
-  background-repeat: no-repeat;
 }
 
 .slider {
@@ -152,35 +151,38 @@ a {
 
 /*Стили внутренней страница*/
 
+.inner-page ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .inner-page h1 {
   font-size: 55px;
   line-height: 55px;
 }
 
-.inner-page-container {
+.inner-page-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
-
-  outline: 2px solid #000000;
 }
 
 .filters {
   width: 260px;
-
-  background-color: rgba(236, 102, 102, 0.3);
-  outline: 3px solid #1cf040;
-}
-
-.filter {
-  width: 260px;
 }
 
 .filter fieldset {
+  margin: 0 0 25px;
+  padding: 0;
+
   border: none;
 }
 
 .filter legend {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -199,7 +201,7 @@ a {
 .filter-input + label {
   position: relative;
 
-  padding-left: 45px;
+  padding-left: 36px;
 }
 
 .filter-input:disabled + label {
@@ -215,7 +217,7 @@ a {
   content: "";
   position: absolute;
   top: -2px;
-  left: 10px;
+  left: 0;
 
   background-repeat: no-repeat;
   opacity: 0.4;
@@ -252,25 +254,11 @@ a {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filters .button {
-  display: block;
-  padding: 19px 89px;
-
+.filters button {
   color: #000000;
 
   background-color: #eeeeee;
-}
-
-.filters button:hover,
-.filters button:focus {
-  background-color: #dfdfdf;
-}
-
-.filters button:active {
-  color: rgba(0, 0, 0, 0.3);
-
-  background-color: #d5d5d5;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  border: 3px solid #eeeeee
 }
 
 .templates {
@@ -278,18 +266,17 @@ a {
   flex-direction: column;
   width: 760px;
   margin-bottom: 60px;
-
-  background-color: rgba(101, 186, 235, 0.3);
-  outline: 2px solid rgba(240, 100, 6, 0.5);
+  padding-top: 40px;
 }
 
 .templates-list {
   display: flex;
   flex-wrap: wrap;
+
   padding: 0;
 }
 
-.templates-list li:nth-child(2n+2) {
+.templates-list li:nth-child(even) {
   margin-left: 40px;
 }
 
@@ -299,6 +286,25 @@ a {
 
   width: 360px;
   margin-bottom: 75px;
+}
+
+.templates-list li::before {
+  content: "";
+
+  position: absolute;
+  top: -40px;
+
+  width: 360px;
+  height: 40px;
+
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  opacity: 0.12;
+}
+
+.templates-list li:hover::before,
+.templates-list li:focus::before {
+  opacity: 1;
 }
 
 .templates-info {
@@ -327,7 +333,7 @@ a {
 }
 
 .templates-info p {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   line-height: 18px;
   color: #666666;
@@ -339,12 +345,9 @@ a {
 
 .pagination-list {
   display: flex;
-  justify-content: flex-start;
   width: 460px;
   min-height: 50px;
-
-  background-color: rgba(59, 195, 236, 0.3);
-  outline: 2px solid #9f7dec;
+  margin: 0;
 }
 
 .pagination-item {
@@ -352,25 +355,31 @@ a {
 }
 
 .pagination-item a {
-  padding: 17px 21px 15px;
+  padding: 13px 19px;
 
-  background-color: #eeeeee
+  background-color: #eeeeee;
+  border: 3px solid #eeeeee;
 }
 
 .pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item a:focus,
+.filters button:hover,
+.filters button:focus {
   background-color: #dfdfdf;
+  border: 3px solid #dfdfdf;
 }
 
-.pagination-item a:active {
+.pagination-item a:active,
+.filters button:active {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #d5d5d5;
+  border: 3px solid #d5d5d5;
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .pagination-item-current a {
-  padding: 14px 19px;
+  padding: 13px 19px;
 
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
@@ -385,8 +394,13 @@ a {
   box-shadow: none;
 }
 
-.pagination-next-page a {
-  padding: 17px 79px 15px 78px;
+.pagination-next-page a,
+.filters .button {
+  padding: 13px 78px;
+
+  text-transform: uppercase;
+
+  border: 3px solid #eeeeee;
 }
 
 
@@ -400,10 +414,6 @@ a {
 
 .services-list {
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: flex-start;
-  padding: 0 60px 0 0;
 
   outline: 3px solid #d81f66;
 }
@@ -413,13 +423,8 @@ a {
   margin-right: 100px;
 }
 
-.services-list li:last-child {
-  margin-right: 60px;
-}
-
 .service {
   width: 300px;
-  margin-bottom: 27px;
 
   outline: 3px solid red;
 }
@@ -437,6 +442,8 @@ a {
 }
 
 .service h3 {
+  margin: 0;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -488,6 +495,7 @@ a {
 .about-us-wrapped {
   display: flex;
   justify-content: space-between;
+  padding-top: 40px;
 
   outline: 3px solid red;
 }
@@ -620,9 +628,9 @@ a {
 
 .social-list {
   display: flex;
-  flex-direction: row;
-  min-width: 260px;
-  margin-right: auto;
+  flex-wrap: wrap;
+  width: 260px;
+  margin-right: 140px;
 
   outline: 3px solid yellowgreen;
 }
@@ -632,7 +640,6 @@ a {
   position: relative;
   width: 78px;
   height: 78px;
-  margin-left: 11px;
 
   background-color: #e1e1e1;
   background-repeat: no-repeat;
