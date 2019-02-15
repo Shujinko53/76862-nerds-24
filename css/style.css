@@ -699,7 +699,7 @@ a {
 
 .clients-list a {
   position: relative;
-  margin: auto;
+  top: -15px;
 
   opacity: 0.2;
 }
