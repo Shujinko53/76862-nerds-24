@@ -86,7 +86,6 @@ a {
 }
 
 .main-navigation ul {
-  margin: 0;
   padding: 27px 0 0;
 }
 
@@ -562,9 +561,6 @@ a {
 .service a {
   display: inline-block;
   margin-bottom: 80px;
-}
-
-.service .button {
   padding: 17px 40px;
 
   color: #ffffff;
@@ -628,27 +624,12 @@ a {
 }
 
 .efficiency-wrapped {
-  position: relative;
-  top: 30%;
-
-  display: flex;
-  flex-direction: column;
   width: 360px;
-  padding-bottom: 20px;
-
-  outline: 3px solid rgba(17, 97, 218, 0.3);
-}
-
-.efficiency-wrapped::before {
-  content: "";
-  position: absolute;
-
-  width: 100%;
-  height: 100%;
+  padding-bottom: 60px;
 
   background-image: url("../img/nerd2.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  outline: 3px solid rgba(17, 97, 218, 0.3);
 }
 
 .efficiency-wrapped h3 {
@@ -682,6 +663,7 @@ a {
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 80px;
   padding-top: 65px;
   padding-bottom: 65px;
@@ -836,8 +818,6 @@ a {
 }
 
 .footer-benefit {
-  margin-left: 139px;
-
   outline: 3px solid red;
 }
 
