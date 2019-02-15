@@ -55,14 +55,6 @@ a {
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.main-page ul,
-.inner-page ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .main-header {
   padding: 49px 0 18px;
 
@@ -75,6 +67,13 @@ a {
   text-align: center;
 
   outline: 3px solid #1cf040;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .main-navigation {
@@ -422,8 +421,6 @@ a {
 
 .services-list {
   display: flex;
-
-  outline: 3px solid #d81f66;
 }
 
 .services-list li {
@@ -433,8 +430,6 @@ a {
 
 .service {
   width: 300px;
-
-  outline: 3px solid red;
 }
 
 .service-site::before {
@@ -509,6 +504,7 @@ a {
 .about-us-wrapped {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 76px;
 
   outline: 3px solid red;
 }
@@ -518,8 +514,6 @@ a {
   flex-direction: column;
   justify-content: space-around;
   width: 660px;
-
-  outline: 3px solid greenyellow;
 }
 
 .about-us b {
@@ -585,11 +579,8 @@ a {
 
 .clients-list {
   display: flex;
-  align-items: center;
   justify-content: space-around;
   margin-bottom: 80px;
-
-  outline: 2px solid red;
 }
 
 .clients-list a {

@@ -13,13 +13,13 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation list">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="user-navigation">
+        <ul class="user-navigation list">
           <li>
             <a class="cart" href="#">Корзина</a>
           </li>
@@ -42,7 +42,7 @@
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Сетка:</legend>
-            <ul>
+            <ul class="list">
               <li class="filter-option">
                 <input class="filter-item filter-input filter-input-radio" type="radio" id="adaptive" value="adaptive" name="network-choice" checked>
                 <label for="adaptive">Адаптивная</label>
@@ -59,7 +59,7 @@
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
-            <ul>
+            <ul class="list">
               <li class="filter-option">
                 <input class="filter-item filter-input filter-input-checkbox" type="checkbox" id="slider" name="feature-slider" checked>
                 <label for="slider">Слайдер</label>
@@ -88,7 +88,7 @@
 
       <section class="templates">
         <h2 class="visually-hidden">Список шаблонов</h2>
-        <ul class="templates-list">
+        <ul class="templates-list list">
           <li>
             <a href="#">
               <img src="img/sedona.jpg" width="360" height="576" alt="Шаблон Седоны">
@@ -150,7 +150,7 @@
             </div>
           </li>
         </ul>
-        <ul class="pagination-list">
+        <ul class="pagination-list list">
           <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
@@ -159,7 +159,7 @@
       </section>
     </div>
 
-      <section class="contacts">
+      <section class="contacts container">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contact-us container">
           <b>Nёrds design studio</b>
@@ -169,8 +169,8 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <ul class="social-list">
+    <footer class="main-footer container">
+      <ul class="social-list list">
         <li><a class="social-link social-vk" href="#"></a></li>
         <li><a class="social-link social-fb" href="#"></a></li>
         <li><a class="social-link social-inst" href="#"></a></li>
@@ -186,15 +186,13 @@
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <b>Напишите нам</b>
         <button class="cross" type="reset"><img src="img/close-cross.png" width="21" height="21" alt="Крестик"></button>
-        <p class="write-us-name">
-          <label>Ваше имя:
-            <input class="field" type="text" name="name" placeholder="Имя Фамилия">
-          </label>
+        <p class="write-item write-us-name">
+          <label for="name">Ваше имя: </label>
+          <input class="field" type="text" name="name" id="name" placeholder="Имя Фамилия">
         </p>
-        <p class="write-us-email">
-          <label>Ваш email:
-            <input class="field" type="email" name="email" placeholder="email@example.com">
-          </label>
+        <p class="write-item write-us-email">
+          <label for="email">Ваш email:</label>
+          <input class="field" type="email" name="email" id="email" placeholder="email@example.com">
         </p>
         <p class="write-us-letter">
           <label for="letter">Текст письма:</label>
