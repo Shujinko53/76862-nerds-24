@@ -703,7 +703,7 @@ a {
 
 .clients-list a {
   position: relative;
-  top: -15px;
+  top: -10px;
 
   opacity: 0.2;
 }
