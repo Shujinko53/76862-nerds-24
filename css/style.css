@@ -699,12 +699,9 @@ a {
 
 .clients-list a {
   position: relative;
+  margin: auto;
 
   opacity: 0.2;
-}
-
-.clients-list li a:nth-child(2) {
-  top: -2px;
 }
 
 .clients-list a:hover,
