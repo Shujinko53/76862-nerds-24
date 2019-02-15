@@ -142,18 +142,6 @@ a {
   background-image: url("../img/cart-icon.svg");
 }
 
-.slider {
-  position: relative;
-
-  margin-bottom: 80px;
-
-  background-color: #eeeeee;
-}
-
-.slider .button {
-  padding: 17px 54px 15px;
-}
-
 
 /*Стили внутренней страница*/
 
@@ -415,6 +403,117 @@ a {
 
 /* Стили главной страницы */
 
+.slider {
+  position: relative;
+
+  margin-bottom: 80px;
+
+  background-color: #eeeeee;
+}
+
+.slider-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.slider-item:nth-child(3) {
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+
+.slider-item h3 {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slider-item p {
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.slider .button {
+  padding: 17px 54px 15px;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.slider-controls .active::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-controls i {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls i::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+
 .services {
   margin-bottom: 40px;
 }
@@ -579,7 +678,6 @@ a {
 
 .clients-list {
   display: flex;
-  justify-content: space-around;
   margin-bottom: 80px;
   padding-top: 65px;
   padding-bottom: 65px;
@@ -589,9 +687,10 @@ a {
 }
 
 .clients-list li {
+  width: 25%;
   height: 52px;
 
-  border-right: 2px solid #eeeeee;
+  text-align: center;
 }
 
 .clients-list li:not(:nth-child(4n)) {
@@ -599,7 +698,13 @@ a {
 }
 
 .clients-list a {
+  position: relative;
+
   opacity: 0.2;
+}
+
+.clients-list li a:nth-child(2) {
+  top: -2px;
 }
 
 .clients-list a:hover,
