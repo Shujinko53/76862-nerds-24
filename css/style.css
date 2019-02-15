@@ -581,13 +581,17 @@ a {
   display: flex;
   justify-content: space-around;
   margin-bottom: 80px;
+  padding-top: 65px;
+  padding-bottom: 65px;
 
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
 
 .clients-list li {
-  padding: 55px 50px 50px 55px;
+  height: 52px;
+
+  border-right: 2px solid #eeeeee;
 }
 
 .clients-list li:not(:nth-child(4n)) {
