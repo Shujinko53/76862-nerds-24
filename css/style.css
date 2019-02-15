@@ -7,13 +7,6 @@ body {
   line-height: 24px;
 }
 
-.main-page ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 
@@ -36,6 +29,7 @@ a {
 }
 
 .button {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -61,6 +55,14 @@ a {
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
+.main-page ul,
+.inner-page ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .main-header {
   padding: 49px 0 18px;
 
@@ -77,7 +79,6 @@ a {
 
 .main-navigation {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
 
   font-weight: 500;
@@ -145,18 +146,18 @@ a {
 .slider {
   position: relative;
 
+  margin-bottom: 80px;
+
   background-color: #eeeeee;
+}
+
+.slider .button {
+  padding: 17px 54px 15px;
 }
 
 
 /*Стили внутренней страница*/
 
-.inner-page ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
 
 .inner-page h1 {
   font-size: 55px;
@@ -407,9 +408,7 @@ a {
 /* Стили главной страницы */
 
 .services {
-  margin-bottom: 162px;
-
-  outline: 3px solid #9f7dec;
+  margin-bottom: 40px;
 }
 
 .services-list {
@@ -443,6 +442,7 @@ a {
 
 .service h3 {
   margin: 0;
+  padding-top: 25px;
 
   font-weight: 700;
   font-size: 24px;
@@ -452,6 +452,11 @@ a {
 
 .service p {
   margin-bottom: 35px;
+}
+
+.service a {
+  display: inline-block;
+  margin-bottom: 80px;
 }
 
 .service .button {
@@ -495,17 +500,15 @@ a {
 .about-us-wrapped {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
 
   outline: 3px solid red;
 }
 
 .about-us {
-  width: 660px;
-  padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 660px;
 
   outline: 3px solid greenyellow;
 }
@@ -579,12 +582,14 @@ a {
 .clients-list {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  margin: 0 20px;
+
+  outline: 2px solid red;
 }
 
 .clients-list a {
   opacity: 0.2;
+
+  margin-bottom: 80px;
 }
 
 .clients-list a:hover,
@@ -616,12 +621,7 @@ a {
 .main-footer {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  width: 1160px;
-  height: 217px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  padding: 0 20px;
+  margin-bottom: 70px;
 
   outline: 3px solid goldenrod;
 }
@@ -837,8 +837,6 @@ a {
   padding: 19px 85px 15px 83px;
 
   line-height: 18px;
-
-  outline: 2px solid rgba(219, 36, 36, 0.5);
 }
 
 
