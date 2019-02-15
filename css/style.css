@@ -558,7 +558,7 @@ a {
   margin-bottom: 35px;
 }
 
-.service a {
+.service .button {
   display: inline-block;
   margin-bottom: 80px;
   padding: 17px 40px;
@@ -607,9 +607,6 @@ a {
 }
 
 .about-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   width: 660px;
 }
 
@@ -670,6 +667,7 @@ a {
 
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
+
 }
 
 .clients-list li {
@@ -677,6 +675,8 @@ a {
   height: 52px;
 
   text-align: center;
+
+  box-sizing: border-box;
 }
 
 .clients-list li:not(:nth-child(4n)) {
@@ -685,7 +685,6 @@ a {
 
 .clients-list a {
   position: relative;
-  top: -10px;
 
   opacity: 0.2;
 }
