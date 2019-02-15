@@ -581,6 +581,17 @@ a {
   display: flex;
   justify-content: space-around;
   margin-bottom: 80px;
+
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.clients-list li {
+  padding: 55px 50px 50px 55px;
+}
+
+.clients-list li:not(:nth-child(4n)) {
+  border-right: 2px solid #eeeeee;
 }
 
 .clients-list a {
