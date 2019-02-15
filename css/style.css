@@ -442,9 +442,9 @@ a {
   margin: 0;
   margin-bottom: 27px;
 
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  font-weight: 500;
 }
 
 .slider-item p {
@@ -515,7 +515,9 @@ a {
 }
 
 .services {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+
+  border-bottom: 2px solid #eeeeee;
 }
 
 .services-list {
@@ -622,16 +624,15 @@ a {
 }
 
 .about-our-servies li {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .efficiency-wrapped {
   position: relative;
+  top: 30%;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 360px;
   padding-bottom: 20px;
 
@@ -662,8 +663,10 @@ a {
 }
 
 .efficiency {
+  width: 33.33333%;
   padding-bottom: 30px;
 
+  font-weight: 700;
   font-size: 45px;
   line-height: 10px;
   vertical-align: middle;
@@ -672,6 +675,7 @@ a {
 }
 
 .about-our-efficiency span {
+  font-weight: 700;
   font-size: 30px;
   vertical-align: super;
 }
@@ -720,23 +724,17 @@ a {
 }
 
 .contact-us {
-  width: 319px;
+  width: 225px;
+  padding: 47px 50px;
 
   outline: 2px solid #447f9e;
 }
 
 .contact-us b {
-  padding: 48px 77px 32px 50px;
-
   font-weight: 700px;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-}
-
-.contact-us p {
-  padding-right: 68px;
-  padding-left: 50px;
 }
 
 .contact-us .button {
