@@ -508,6 +508,7 @@ a {
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .services-list li {
@@ -605,6 +606,7 @@ a {
 }
 
 .about-us p {
+  margin: 0;
   margin-bottom: 39px;
 }
 
