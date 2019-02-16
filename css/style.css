@@ -591,6 +591,11 @@ a {
   margin-bottom: 50px;
 }
 
+.about-us-wrapped h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .about-us {
   width: 660px;
   padding-top: 35px;
@@ -613,6 +618,8 @@ a {
 .about-us h3 {
   margin: 0;
   margin-bottom: 27px;
+
+  text-transform: uppercase;
 }
 
 .about-our-servies li {
@@ -647,6 +654,8 @@ a {
 
 .efficiency-wrapped h3 {
   margin-bottom: 45px;
+
+  text-transform: uppercase;
 }
 
 .efficiency {
