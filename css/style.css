@@ -588,6 +588,7 @@ a {
 .about-us-wrapped {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .about-us {
@@ -635,7 +636,6 @@ a {
 
 .efficiency-wrapped {
   width: 360px;
-  padding-bottom: 60px;
 
   background-image: url("../img/nerd2.png");
   background-repeat: no-repeat;
