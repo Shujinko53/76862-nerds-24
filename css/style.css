@@ -460,11 +460,13 @@ a {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 96px;
+  bottom: 90px;
 
   display: flex;
   width: 160px;
   height: 18px;
+  margin-right: 8px;
+  margin-bottom: 8px;
   padding-left: 75px;
 
   text-align: center;
@@ -613,6 +615,7 @@ a {
 }
 
 .about-us h3 {
+  margin: 0;
   margin-bottom: 27px;
 }
 
