@@ -514,7 +514,7 @@ a {
 }
 
 .services {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -601,9 +601,6 @@ a {
 .about-us-wrapped {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 76px;
-
-  outline: 3px solid red;
 }
 
 .about-us {
@@ -611,13 +608,40 @@ a {
 }
 
 .about-us b {
+  display: block;
+  padding-top: 35px;
+  margin-bottom: 31px;
+
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
 
+.about-us p {
+  margin-bottom: 39px;
+}
+
+.about-us h3 {
+  margin-bottom: 27px;
+}
+
 .about-our-servies li {
+  position: relative;
   margin-bottom: 25px;
+  padding-left: 37px;
+}
+
+.about-our-servies li::before {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #fb565a;
 }
 
 .efficiency-wrapped {
@@ -626,19 +650,13 @@ a {
 
   background-image: url("../img/nerd2.png");
   background-repeat: no-repeat;
-  outline: 3px solid rgba(17, 97, 218, 0.3);
 }
 
 .efficiency-wrapped h3 {
-  margin-top: 250px;
-  margin-bottom: 50px;
-
-  outline: 3px solid rgba(86, 131, 199, 0.3);
+  margin-top: 245px;
+  margin-bottom: 45px;
 }
 
-.about-our-efficiency tr {
-  outline: 3px solid rgba(24, 179, 50, 0.3);
-}
 
 .efficiency {
   width: 33.33333%;
@@ -647,9 +665,6 @@ a {
   font-weight: 700;
   font-size: 45px;
   line-height: 10px;
-  vertical-align: middle;
-
-  outline: 3px solid rgba(17, 97, 218, 0.3);
 }
 
 .about-our-efficiency span {
@@ -707,8 +722,6 @@ a {
 .contact-us {
   width: 225px;
   padding: 47px 50px;
-
-  outline: 2px solid #447f9e;
 }
 
 .contact-us b {
@@ -716,6 +729,11 @@ a {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.contact-us p:nth-child(3) {
+  margin: 0;
+  margin-bottom: 33px;
 }
 
 .contact-us .button {
@@ -726,8 +744,6 @@ a {
   display: flex;
   align-items: center;
   margin-bottom: 70px;
-
-  outline: 3px solid goldenrod;
 }
 
 .social-list {
@@ -735,10 +751,16 @@ a {
   flex-wrap: wrap;
   width: 260px;
   margin-right: 140px;
-
-  outline: 3px solid yellowgreen;
 }
 
+.social-list li {
+  width: 33,33333%;
+  margin-right: 12px;
+}
+
+.social-list li:nth-child(3n) {
+  margin-right: 0;
+}
 .social-link {
   display: block;
   position: relative;
@@ -748,10 +770,6 @@ a {
   background-color: #e1e1e1;
   background-repeat: no-repeat;
   border-radius: 100px;
-}
-
-.social-vk {
-  margin: 0;
 }
 
 .social-link:hover,
@@ -816,13 +834,18 @@ a {
   opacity: 0.3;
 }
 
-.footer-benefit {
-  outline: 3px solid red;
-}
-
 .footer-benefit b {
+  display: block;
+  margin-bottom: 9px;
+  padding-top: 9px;
+
   font-size: 36px;
   line-height: 36px;
+}
+
+.footer-benefit p {
+  margin: 0;
+  margin-bottom: 4px;
 }
 
 .modal-write-us {
