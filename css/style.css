@@ -31,6 +31,7 @@ a {
 .button {
   display: inline-block;
   padding: 17px 20px 15px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -79,7 +80,7 @@ a {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   font-weight: 500;
   line-height: 30px;
@@ -108,7 +109,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 485px;
+  width: 486px;
   margin-right: 45px;
 }
 
@@ -337,7 +338,7 @@ a {
 }
 
 .templates-info .button {
-  padding: 19px 60px 19px 62px;
+  width: 160px;
 }
 
 .pagination-list {
@@ -453,41 +454,22 @@ a {
 }
 
 .slider .button {
-  width: 240px;
-  padding: 17px 20px 15px;
+  width: 200px;
 }
 
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 90px;
+  bottom: 79px;
 
   display: flex;
+  justify-content: center;
   width: 160px;
   height: 18px;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  padding-left: 75px;
+  margin-bottom: 17px;
 
   text-align: center;
   transform: translateX(-50%);
-}
-
-.slider-controls .active::before {
-  content: "";
-
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 2;
-
-  width: 4px;
-  height: 4px;
-  margin: -4px;
-
-  background-color: inherit;
-  border: 2px solid #c1c1c1;
-  border-radius: 50%;
 }
 
 .slider-controls button {
@@ -495,13 +477,27 @@ a {
 
   width: 18px;
   height: 18px;
-  margin-right: 17px;
-  padding: 8px;
+  margin-right: 9px;
+  padding: 0;
 
   background-color: #ffffff;
   border-style: none;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-controls .active::before {
+  content: "";
+
+  position: absolute;
+  left: 5px;
+  top: 5px;
+
+  width: 4px;
+  height: 4px;
+
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
 
 .services {
@@ -552,8 +548,8 @@ a {
 
 .service .button {
   display: inline-block;
+  width: 120px;
   margin-bottom: 80px;
-  padding: 17px 40px;
 
   color: #ffffff;
 }
@@ -597,11 +593,11 @@ a {
 
 .about-us {
   width: 660px;
+  padding-top: 35px;
 }
 
 .about-us b {
   display: block;
-  padding-top: 35px;
   margin-bottom: 31px;
 
   font-weight: 500;
@@ -738,8 +734,7 @@ a {
 }
 
 .contact-us .button {
-  width: 219px;
-  padding: 19px 20px;
+  width: 179px;
 }
 
 .main-footer {
@@ -956,8 +951,8 @@ a {
 }
 
 .write-us-form .button {
+  width: 260px;
   margin-bottom: 84px;
-  padding: 19px 85px 15px 83px;
 
   line-height: 18px;
 }
