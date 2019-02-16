@@ -30,6 +30,7 @@ a {
 
 .button {
   display: inline-block;
+  padding: 17px 20px 15px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -452,18 +453,19 @@ a {
 }
 
 .slider .button {
-  padding: 17px 54px 15px;
+  width: 240px;
+  padding: 17px 20px 15px;
 }
 
 .slider-controls {
   position: absolute;
-  left: 51.9%;
+  left: 50%;
   bottom: 96px;
-  z-index: 100;
 
   display: flex;
   width: 160px;
   height: 18px;
+  padding-left: 75px;
 
   text-align: center;
   transform: translateX(-50%);
@@ -511,7 +513,7 @@ a {
   flex-wrap: wrap;
 }
 
-.services-list li {
+.service {
   width: 300px;
   margin-right: 100px;
 }
@@ -708,11 +710,14 @@ a {
 }
 
 .contact-us {
-  width: 225px;
+  width: 220px;
   padding: 47px 50px;
 }
 
-.contact-us b {
+.contact-us h2 {
+  display: block;
+  margin-bottom: 25px;
+
   font-weight: 700px;
   font-size: 18px;
   line-height: 30px;
@@ -724,8 +729,14 @@ a {
   margin-bottom: 33px;
 }
 
+.contact-us p {
+  margin: 0;
+  margin-bottom: 17px;
+}
+
 .contact-us .button {
-  padding: 19px 45px;
+  width: 219px;
+  padding: 19px 20px;
 }
 
 .main-footer {
