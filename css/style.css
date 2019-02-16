@@ -277,8 +277,8 @@ a {
 
   display: block;
   width: 360px;
-  margin-bottom: 75px;
-  padding: 40px 0 0;
+  margin-bottom: 33px;
+  padding-top: 40px;
 
   background-color: rgba(77, 77, 77, 0.12);
 
@@ -338,14 +338,16 @@ a {
 }
 
 .templates-info .button {
+  display: block;
   width: 160px;
 }
 
 .pagination-list {
   display: flex;
-  width: 460px;
-  min-height: 50px;
-  margin: 0;
+}
+
+.pagination-list li {
+  display: inline-block;
 }
 
 .pagination-item {
