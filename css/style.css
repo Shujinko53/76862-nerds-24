@@ -457,10 +457,11 @@ a {
 
 .slider-controls {
   position: absolute;
-  left: 50%;
-  bottom: 104px;
+  left: 51.9%;
+  bottom: 96px;
   z-index: 100;
 
+  display: flex;
   width: 160px;
   height: 18px;
 
@@ -485,32 +486,18 @@ a {
   border-radius: 50%;
 }
 
-.slider-controls i {
+.slider-controls button {
   position: relative;
 
-  display: inline-block;
   width: 18px;
   height: 18px;
+  margin-right: 17px;
   padding: 8px;
 
+  background-color: #ffffff;
+  border-style: none;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.slider-controls i::after {
-  content: "";
-
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  z-index: 1;
-
-  width: 18px;
-  height: 18px;
-
-  background: #ffffff;
-
-  border-radius: 50%;
 }
 
 .services {
@@ -528,8 +515,8 @@ a {
   margin-right: 100px;
 }
 
-.service {
-  width: 300px;
+.service:nth-child(3n) {
+  margin-right: 0;
 }
 
 .service-site::before {
@@ -657,7 +644,6 @@ a {
   margin-bottom: 45px;
 }
 
-
 .efficiency {
   width: 33.33333%;
   padding-bottom: 30px;
@@ -670,7 +656,7 @@ a {
 .about-our-efficiency span {
   font-weight: 700;
   font-size: 30px;
-  vertical-align: super;
+  vertical-align: 100%;
 }
 
 .clients-list {
