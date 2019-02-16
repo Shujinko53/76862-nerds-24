@@ -460,15 +460,13 @@ a {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 79px;
+  bottom: 90px;
 
   display: flex;
   justify-content: center;
   width: 160px;
   height: 18px;
-  margin-bottom: 17px;
 
-  text-align: center;
   transform: translateX(-50%);
 }
 
@@ -478,10 +476,11 @@ a {
   width: 18px;
   height: 18px;
   margin-right: 9px;
+  margin-left: 9px;
   padding: 0;
 
   background-color: #ffffff;
-  border-style: none;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -642,8 +641,11 @@ a {
   background-repeat: no-repeat;
 }
 
+.efficiency-wrapped {
+  padding-top: 225px;
+}
+
 .efficiency-wrapped h3 {
-  margin-top: 245px;
   margin-bottom: 45px;
 }
 
@@ -829,6 +831,10 @@ a {
 
 .social-list .social-inst:active::before {
   opacity: 0.3;
+}
+
+.footer-benefit {
+  max-width: 560px;
 }
 
 .footer-benefit b {
