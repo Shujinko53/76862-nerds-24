@@ -170,8 +170,6 @@ a {
   margin-bottom: 60px;
 }
 
-
-
 .filters {
   width: 260px;
 }
@@ -456,8 +454,8 @@ a {
 }
 
 
-.pagination-button a,
-.filters .pagination-button {
+.catalog-button a,
+.filters .catalog-button {
   display: block;
   padding: 13px 19px;
 
@@ -471,16 +469,16 @@ a {
   border: 3px solid #eeeeee;
 }
 
-.pagination-button a:hover,
-.pagination-button a:focus,
-.filters .pagination-button:hover,
-.pagination-button:focus {
+.catalog-button a:hover,
+.catalog-button a:focus,
+.filters .catalog-button:hover,
+.filters .catalog-button:focus {
   background-color: #dfdfdf;
   border: 3px solid #dfdfdf;
 }
 
-.pagination-button a:active,
-.filters .pagination-button:active {
+.catalog-button a:active,
+.filters .catalog-button:active {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #d5d5d5;
