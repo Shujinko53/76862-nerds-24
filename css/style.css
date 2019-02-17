@@ -179,7 +179,7 @@ a {
 
 .inner-page h1 {
   margin: 0 0 60px;
-  padding: 82px 359px 116px;
+  padding: 82px 100px 116px;
 
   font-size: 55px;
   line-height: 55px;
@@ -256,11 +256,11 @@ a {
   box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 
-.range-controls .price-toggle-max {
+.price-toggle-max {
   left: 165px;
 }
 
-.range-controls .price-toggle-min::before {
+.price-toggle-min::before {
   content: "";
 
   position: absolute;
@@ -814,19 +814,27 @@ a {
 }
 
 .contacts {
+  width: 1440px;
+  height: 416px;
+  margin: 0 auto;
   margin-bottom: 70px;
 
-  outline: 2px solid rgba(216, 156, 156, 0.5);
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
 
 .contact-us {
   width: 220px;
   padding: 47px 50px;
+
+  background-color: #ffffff;
 }
 
 .contact-us h2 {
   display: block;
+  margin: 0;
   margin-bottom: 25px;
+  padding-top: 48px;
 
   font-weight: 700px;
   font-size: 18px;
@@ -975,14 +983,60 @@ a {
   padding: 0 80px;
 }
 
+.write-us-form fieldset {
+  border: none;
+}
+
+.write-us-form .cross {
+  margin: 78px 0 53px;
+
+  background-color: #ffffff;
+  border: none;
+  opacity: 0.3;
+}
+
+.write-us-form .cross:hover,
+.write-us-form .cross:focus {
+  opacity: 1;
+}
+
+.write-us-form .cross:active {
+  opacity: 0.1;
+}
+
 .write-us-form b {
+  margin: 66px 0 36px;
   padding-right: 250px;
+
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
 }
 
 .write-us-form .write-item {
   width: 360px;
   margin: 0;
   margin-bottom: 34px;
+}
+
+.write-us-form .field {
+  font: inherit;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+
+  border: 2px solid;
+}
+
+.write-us-form .field:hover {
+  border-color: #b4b9bb;
+}
+
+.write-us-form .field:focus {
+  border-color: #000000;
+}
+
+.write-us-form .field:invalid {
+  color: #e74246;
 }
 
 .write-us-form p label{
@@ -1010,66 +1064,9 @@ a {
   box-sizing: border-box;
 }
 
-/*--------*/
-
-.write-us-form .cross {
-  margin: 78px 0 53px;
-}
-
-.write-us-form b {
-  margin: 66px 0 36px;
-
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 45px;
-}
-
-.write-us-form .cross {
-
-  background-color: #ffffff;
-  border: none;
-
-  opacity: 0.3;
-}
-
-.write-us-form .cross:hover,
-.write-us-form .cross:focus {
-  opacity: 1;
-}
-
-.write-us-form .cross:active {
-  opacity: 0.1;
-}
-
-.write-us-form fieldset {
-  border: none;
-}
-
-.write-us-form .field {
-  font: inherit;
-  line-height: 18px;
-  color: rgba(68, 68, 68, 0.5);
-
-  border: 2px solid;
-}
-
-.write-us-form .field:hover {
-  border-color: #b4b9bb;
-}
-
-.write-us-form .field:focus {
-  border-color: #000000;
-}
-
-.write-us-form .field:invalid {
-  color: #e74246;
-}
-
 .write-us-form .button {
   width: 260px;
   margin-bottom: 84px;
 
   line-height: 18px;
 }
-
-

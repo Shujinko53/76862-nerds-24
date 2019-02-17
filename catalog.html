@@ -31,16 +31,8 @@
       <div class="inner-page-wrapper container">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр макетов</h2>
-        <!--
-        <form class="filter-makets" action="https://echo.htmlacademy.ru" method="post" oninput="sum.value=count.value">
-            <h3>Стоимость:</h3>
-              <input type="range" name="count" min="0" max="15000" step="1" value="0">
-          <div class="output-area">
-            от <input type="text" name="sum" id="sum" value="0">
-            до <input type="text" name="cost" value="15 000">
-          </div>-->
 
-        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-option">
               <legend>Стоимость:</legend>
               <div class="range-filter">
@@ -48,8 +40,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <button class="price-toggle price-toggle-min"></button>
-                  <button class="price-toggle price-toggle-max"></button>
+                  <button class="price-toggle price-toggle-min" type="button"></button>
+                  <button class="price-toggle price-toggle-max" type="button"></button>
                 </div>
                 <div class="price-controls">
                   <label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -164,7 +156,7 @@
       </section>
     </div>
 
-      <section class="contacts container">
+      <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contact-us">
           <b>Nёrds design studio</b>
