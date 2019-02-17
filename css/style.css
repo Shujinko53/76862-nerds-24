@@ -118,6 +118,10 @@ a {
   margin-left: 45px;
 }
 
+.navigation-item-current {
+  border-bottom: 2px solid #fb565a;
+}
+
 .user-navigation {
   display: flex;
   justify-content: flex-end;
@@ -149,6 +153,7 @@ a {
 
 .inner-page h1 {
   margin: 0;
+  margin-bottom: 60px;
   padding-top: 82px;
   padding-bottom: 116px;
 
@@ -164,6 +169,8 @@ a {
   justify-content: space-between;
   margin-bottom: 60px;
 }
+
+
 
 .filters {
   width: 260px;
@@ -183,6 +190,88 @@ a {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.toggle {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 3px;
+}
+
+.price-controls .max-price {
+  text-align: right;
 }
 
 .filter ul {
@@ -252,10 +341,6 @@ a {
 
 .filters button {
   width: 260px;
-  color: #000000;
-
-  background-color: #eeeeee;
-  border: 3px solid #eeeeee
 }
 
 .templates {
@@ -358,34 +443,44 @@ a {
 .templates-info .button {
   display: block;
   width: 160px;
+  margin: 0 auto;
 }
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination-item {
   margin-right: 10px;
 }
 
-.pagination-item a {
+
+.pagination-button a,
+.filters .pagination-button {
   display: block;
   padding: 13px 19px;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 
   background-color: #eeeeee;
   border: 3px solid #eeeeee;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus,
-.filters button:hover,
-.filters button:focus {
+.pagination-button a:hover,
+.pagination-button a:focus,
+.filters .pagination-button:hover,
+.pagination-button:focus {
   background-color: #dfdfdf;
   border: 3px solid #dfdfdf;
 }
 
-.pagination-item a:active,
-.filters button:active {
+.pagination-button a:active,
+.filters .pagination-button:active {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #d5d5d5;
@@ -394,8 +489,6 @@ a {
 }
 
 .pagination-item-current a {
-  padding: 13px 19px;
-
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
 }
@@ -406,16 +499,12 @@ a {
   color: #000000;
 
   background-color: #ffffff;
+  border: 3px solid #dbdbdb;
   box-shadow: none;
 }
 
-.pagination-next-page a,
-.filters .button {
-  padding: 13px 78px;
-
-  text-transform: uppercase;
-
-  border: 3px solid #eeeeee;
+.pagination-next-page a {
+  width: 220px;
 }
 
 

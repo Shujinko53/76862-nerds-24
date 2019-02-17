@@ -16,7 +16,7 @@
         <ul class="site-navigation list">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li class="navigation-item-current"><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation list">
@@ -39,7 +39,24 @@
             от <input type="text" name="sum" id="sum" value="0">
             до <input type="text" name="cost" value="15 000">
           </div>-->
+
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-option">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
+            </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
             <ul class="list">
@@ -82,7 +99,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="button pagination-button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -139,10 +156,10 @@
           </li>
         </ul>
         <ul class="pagination-list list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item pagination-next-page"><a href="#">Следующая</a></li>
+          <li class="pagination-item pagination-item-current pagination-button"><a href="#">1</a></li>
+          <li class="pagination-item pagination-button"><a href="#">2</a></li>
+          <li class="pagination-item pagination-button"><a href="#">3</a></li>
+          <li class="pagination-item pagination-next-page pagination-button"><a href="#">Следующая</a></li>
         </ul>
       </section>
     </div>
@@ -189,5 +206,11 @@
         <button class="button" type="submit">Отправить</button>
       </form>
     </section>
+
+    <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="filter-item">
+        <legend>Стоимость:</legend>
+      </fieldset>
+      </form>
   </body>
 </html>
