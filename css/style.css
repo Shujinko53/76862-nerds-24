@@ -179,7 +179,7 @@ a {
 
 .inner-page h1 {
   margin: 0 0 60px;
-  padding: 82px 100px 116px;
+  padding: 82px 359px 116px;
 
   font-size: 55px;
   line-height: 55px;
@@ -241,7 +241,7 @@ a {
   background: #00ca74;
 }
 
-.range-controls .price-toggle {
+.price-toggle {
   position: absolute;
   top: 30px;
   left: 18px;
@@ -256,11 +256,7 @@ a {
   box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 
-.price-toggle-max {
-  left: 165px;
-}
-
-.price-toggle-min::before {
+.price-toggle::before {
   content: "";
 
   position: absolute;
@@ -272,8 +268,11 @@ a {
   height: 4px;
   background-color: #ababab;
   border-radius: 50%;
-  box-shadow: 147px 0 0 #ababab;
   cursor: pointer;
+}
+
+.price-toggle-max {
+  left: 165px;
 }
 
 .price-controls {
@@ -372,7 +371,7 @@ a {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filters button {
+.filters .catalog-button {
   width: 260px;
 }
 
@@ -814,16 +813,22 @@ a {
 }
 
 .contacts {
+  position: relative;
+
   width: 1440px;
   height: 416px;
+
   margin: 0 auto;
   margin-bottom: 70px;
 
   background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
 }
 
 .contact-us {
+  position: absolute;
+  top: 54px;
+  left: 140px;
+
   width: 220px;
   padding: 47px 50px;
 
@@ -831,10 +836,8 @@ a {
 }
 
 .contact-us h2 {
-  display: block;
   margin: 0;
   margin-bottom: 25px;
-  padding-top: 48px;
 
   font-weight: 700px;
   font-size: 18px;
@@ -983,10 +986,6 @@ a {
   padding: 0 80px;
 }
 
-.write-us-form fieldset {
-  border: none;
-}
-
 .write-us-form .cross {
   margin: 78px 0 53px;
 
@@ -1019,6 +1018,22 @@ a {
   margin-bottom: 34px;
 }
 
+.write-us-form fieldset {
+  border: none;
+}
+
+.write-us-form p label{
+  display: block;
+  margin-bottom: 9px;
+}
+
+.write-item input {
+  width: 360px;
+  padding: 16px 20px 18px 14px;
+
+  box-sizing: border-box;
+}
+
 .write-us-form .field {
   font: inherit;
   line-height: 18px;
@@ -1037,18 +1052,6 @@ a {
 
 .write-us-form .field:invalid {
   color: #e74246;
-}
-
-.write-us-form p label{
-  display: block;
-  margin-bottom: 9px;
-}
-
-.write-item input {
-  width: 360px;
-  padding: 16px 20px 18px 14px;
-
-  box-sizing: border-box;
 }
 
 .write-us-letter {
