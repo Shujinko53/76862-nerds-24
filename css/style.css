@@ -815,31 +815,41 @@ a {
   opacity: 0.1;
 }
 
+
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
 .contacts {
   position: relative;
 
-  width: 1440px;
+  width: 100%;
   height: 416px;
-  margin: 0 auto 70px;
+  margin-bottom: 70px;
 
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .contact-us {
   position: absolute;
   top: 54px;
-  left: 140px;
+  left: 370px;
 
   width: 220px;
-  padding: 47px 50px;
+  padding: 45px 50px;
 
   background-color: #ffffff;
 }
 
 .contact-us h2 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   font-weight: 700px;
   font-size: 18px;
@@ -860,11 +870,6 @@ a {
   width: 179px;
 }
 
-.main-footer {
-  display: flex;
-  align-items: center;
-  margin-bottom: 70px;
-}
 
 .social-list {
   display: flex;
@@ -976,6 +981,8 @@ a {
   max-width: 960px;
   margin: 0 auto;
 
+  background-color: #ffffff;
+  box-shadow: 0 50px 150px #000000;
   outline: 3px dotted #00aa62;
 }
 
