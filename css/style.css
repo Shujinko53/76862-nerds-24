@@ -820,11 +820,10 @@ a {
 
   width: 1440px;
   height: 416px;
-
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin: 0 auto 70px;
 
   background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
 
 .contact-us {
@@ -848,14 +847,13 @@ a {
   text-transform: uppercase;
 }
 
-.contact-us p:nth-child(3) {
-  margin: 0;
-  margin-bottom: 33px;
-}
-
 .contact-us p {
   margin: 0;
   margin-bottom: 17px;
+}
+
+.contact-us p:nth-child(3) {
+  margin-bottom: 33px;
 }
 
 .contact-us .button {
