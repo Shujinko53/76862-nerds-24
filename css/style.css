@@ -78,7 +78,7 @@ a {
 
 .main-navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   font-weight: 500;
   line-height: 30px;
@@ -648,11 +648,8 @@ a {
 }
 
 .service .button {
-  display: inline-block;
   width: 120px;
   margin-bottom: 80px;
-
-  color: #ffffff;
 }
 
 .service .button:active {
@@ -670,7 +667,6 @@ a {
 
 .service-apps .button:active {
   background-color: #00aa62;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .service-present .button {
@@ -684,7 +680,6 @@ a {
 
 .service-present .button:active {
   background-color: #e5a722;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .about-us-wrapped {
@@ -816,20 +811,14 @@ a {
 }
 
 
-.main-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 70px;
-}
+/* Footer */
 
 .contacts {
-  position: relative;
-
-  width: 100%;
-  height: 416px;
-  margin-bottom: 70px;
+  margin-left: -140px;
+  margin-right: -140px;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  padding-left: 140px;
 
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
@@ -837,10 +826,6 @@ a {
 }
 
 .contact-us {
-  position: absolute;
-  top: 54px;
-  left: 370px;
-
   width: 220px;
   padding: 45px 50px;
 
@@ -870,6 +855,11 @@ a {
   width: 179px;
 }
 
+.social-footer-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 69px 0;
+}
 
 .social-list {
   display: flex;
@@ -886,6 +876,7 @@ a {
 .social-list li:nth-child(3n) {
   margin-right: 0;
 }
+
 .social-link {
   display: block;
   position: relative;
@@ -966,7 +957,6 @@ a {
 .footer-benefit b {
   display: block;
   margin-bottom: 9px;
-  padding-top: 9px;
 
   font-size: 36px;
   line-height: 36px;
@@ -978,20 +968,25 @@ a {
 }
 
 .modal-write-us {
-  max-width: 960px;
-  margin: 0 auto;
+  display: none;
+  position: fixed;
+  bottom: 180px;
+  left: 50%;
+
+  width: 760px;
+  margin: 0;
+  margin-left: -480px;
+  padding: 0 100px;
 
   background-color: #ffffff;
-  box-shadow: 0 50px 150px #000000;
-  outline: 3px dotted #00aa62;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.7);
 }
 
 .write-us-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 760px;
-  padding: 0 80px;
+
 }
 
 .write-us-form .cross {
@@ -1047,7 +1042,7 @@ a {
   line-height: 18px;
   color: rgba(68, 68, 68, 0.5);
 
-  border: 2px solid;
+  border: 2px solid #d7dcde;
 }
 
 .write-us-form .field:hover {
