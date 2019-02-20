@@ -148,6 +148,7 @@ a {
 
 /*Стили внутренней страница*/
 
+
 .catalog-button {
   display: block;
   padding: 13px 19px;
@@ -387,44 +388,14 @@ a {
 
   display: flex;
   justify-content: space-between;
-  margin: 0 0 63px;
+  margin: 0 40px 63px 0;
   padding: 0;
-  padding-right: 80px;
   width: 680px;
 
   line-height: 18px;
   text-transform: uppercase;
 
   border: none;
-}
-
-.sort::before,
-.sort::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-
-  cursor: pointer;
-}
-
-.sort::before {
-  right: 28px;
-
-  border: none;
-  border-right: 6px solid rgba(0, 0, 0, 0);
-  border-bottom: 10px solid black;
-  border-left: 6px solid rgba(0, 0, 0, 0);
-}
-
-.sort::after {
-  right: 0;
-
-  border: none;
-  border-right: 6px solid rgba(0, 0, 0, 0);
-  border-top: 10px solid black;
-  border-left: 6px solid rgba(0, 0, 0, 0);
-
-  opacity: 0.5;
 }
 
 .sort b {
@@ -458,6 +429,38 @@ a {
 
 .sort-options a:active {
   color: #000000;
+}
+
+.sort-options-triangles {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40px;
+
+  outline: 1px dashed #00ca74;
+}
+
+.sort-options-triangles li {
+  margin-right: 10px;
+}
+
+.sort-options-triangles li:nth-child(2) {
+  margin-right: 0;
+}
+
+.first-triangle {
+  border: none;
+  border-right: 6px solid rgba(0, 0, 0, 0);
+  border-bottom: 10px solid black;
+  border-left: 6px solid rgba(0, 0, 0, 0);
+}
+
+.second-triangle {
+  border: none;
+  border-right: 6px solid rgba(0, 0, 0, 0);
+  border-top: 10px solid black;
+  border-left: 6px solid rgba(0, 0, 0, 0);
+
+  opacity: 0.5;
 }
 
 .templates {
