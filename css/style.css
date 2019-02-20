@@ -399,18 +399,24 @@ a {
 }
 
 .sort b {
+  width: 360px;
   margin-right: auto;
 
   font-weight: 700;
   font-size: 18px;
+
+  outline: 1px dotted black;
 }
 
 .sort-options {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   width: 300px;
 
   margin-right: 21px;
+
+  outline: 1px dotted salmon;
 }
 
 .sort-options li {
@@ -434,9 +440,11 @@ a {
 .sort-options-order {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   width: 40px;
+  padding-top: 4px;
+
+  outline: 1px dashed gold;
 }
 
 .order-increase {
