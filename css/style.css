@@ -435,7 +435,6 @@ a {
   flex-wrap: wrap;
   align-items: center;
   width: 40px;
-  margin-left: auto;
 
   outline: 1px dashed #00ca74;
 }
@@ -445,6 +444,7 @@ a {
 }
 
 .first-triangle {
+  display: block;
   border: none;
   border-top: 10px solid black;
   border-right: 6px solid rgba(0, 0, 0, 0);
@@ -452,6 +452,7 @@ a {
 }
 
 .second-triangle {
+  display: block;
   border: none;
   border-bottom: 10px solid black;
   border-right: 6px solid rgba(0, 0, 0, 0);
