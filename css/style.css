@@ -404,8 +404,6 @@ a {
 
   font-weight: 700;
   font-size: 18px;
-
-  outline: 1px dotted black;
 }
 
 .sort-options {
@@ -413,8 +411,6 @@ a {
   flex-wrap: wrap;
   align-content: flex-start;
   width: 320px;
-
-  outline: 1px dotted salmon;
 }
 
 .sort-options li {
@@ -442,8 +438,6 @@ a {
   justify-content: space-between;
   width: 40px;
   padding-top: 4px;
-
-  outline: 1px dashed gold;
 }
 
 .order-increase {
