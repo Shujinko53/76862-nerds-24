@@ -412,15 +412,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  width: 300px;
-
-  margin-right: 21px;
+  width: 320px;
 
   outline: 1px dotted salmon;
 }
 
 .sort-options li {
   margin-right: 25px;
+  margin-bottom: 8px;
 }
 
 .sort-options a {
