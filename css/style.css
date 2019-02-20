@@ -387,10 +387,9 @@ a {
   position: relative;
 
   display: flex;
-  justify-content: space-between;
-  margin: 0 40px 63px 0;
+  margin: 0 0 63px;
   padding: 0;
-  width: 680px;
+  width: 760px;
 
   line-height: 18px;
   text-transform: uppercase;
@@ -434,33 +433,35 @@ a {
 .sort-options-triangles {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 40px;
+  margin-left: auto;
 
   outline: 1px dashed #00ca74;
 }
 
 .sort-options-triangles li {
-  margin-right: 10px;
-}
-
-.sort-options-triangles li:nth-child(2) {
-  margin-right: 0;
+  margin-right: 16px;
 }
 
 .first-triangle {
   border: none;
+  border-top: 10px solid black;
   border-right: 6px solid rgba(0, 0, 0, 0);
-  border-bottom: 10px solid black;
   border-left: 6px solid rgba(0, 0, 0, 0);
 }
 
 .second-triangle {
   border: none;
+  border-bottom: 10px solid black;
   border-right: 6px solid rgba(0, 0, 0, 0);
-  border-top: 10px solid black;
   border-left: 6px solid rgba(0, 0, 0, 0);
 
   opacity: 0.5;
+}
+
+.sort-options-triangles li:nth-child(2) {
+  margin-right: 0;
 }
 
 .templates {
