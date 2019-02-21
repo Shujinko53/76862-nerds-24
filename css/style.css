@@ -716,7 +716,7 @@ a {
   margin-right: 0;
 }
 
-.service-site::before {
+.service::before {
   content: "";
 
   position: absolute;
@@ -725,35 +725,19 @@ a {
 
   width: 300px;
   height: 146px;
+}
 
+.service-site::before {
   background-color: #fb565a;
   background-image: url("../img/web.jpg");
 }
 
 .service-apps::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 300px;
-  height: 146px;
-
   background-color: #00ca74;
   background-image: url("../img/apps.jpg");
 }
 
 .service-present::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 300px;
-  height: 146px;
-
   background-color: #efc84a;
   background-image: url("../img/present.jpg");
 }
