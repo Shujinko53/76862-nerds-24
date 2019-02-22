@@ -169,27 +169,27 @@
     </section>
 
     <script>
-      var link = document.querySelector(".write-us-link");
-      var modal = document.querySelector(".modal-write-us");
-      var close = modal.querySelector(".cross");
+      var linkWriteUs = document.querySelector('.write-us-link');
+      var modal = document.querySelector('.modal-write-us');
+      var modalClose = modal.querySelector('.cross');
       var form = modal.querySelector("form");
-      var name = modal.querySelector(".write-name");
-      var email = modal.querySelector(".write-pass");
-      var commt = modal.querySelector("textarea");
-      var storage = localStorage.getItem("login");
+      var name = modal.querySelector('.write-name');
+      var email = modal.querySelector('.write-pass');
+      var commt = modal.querySelector('textarea');
+      var storage = localStorage.getItem('login');
 
       var isStorageSupport = true;
       var storage = "";
 
       try {
-        storage = localStorage.getItem ("login");
+        storage = localStorage.getItem ('login');
       } catch (err) {
         isStorageSupport = false;
       }
 
-      link.addEventListener("click", function (ent) {
+      linkWriteUs.addEventListener('click', function (ent) {
         ent.preventDefault();
-        modal.classList.add("modal-show");
+        modal.classList.add('modal-show');
         name.focus();
         if (storage) {
           login.value = storage;
@@ -200,29 +200,29 @@
       });
 
 
-      close.addEventListener("click", function (ent) {
+      modalClose.addEventListener('click', function (ent) {
         ent.preventDefault ();
-        modal.classList.remove("modal-show");
-        modal.classList.remove("modal-error");
+        modal.classList.remove('modal-show');
+        modal.classList.remove('modal-error');
       });
 
-      form.addEventListener("submit", function (ent) {
+      form.addEventListener('submit', function (ent) {
         if (!name.value || !email.value || !commt.value) {
           ent.preventDefault ();
-          console.log("Нужно ввести логин и пароль")
-          modal.classList.toggle("modal-error");
+          console.log('Нужно ввести логин и пароль')
+          modal.classList.toggle('modal-error');
         } else {
           if (isStorageSupport) {
-            localStorage.setItem("login", name.value);
+            localStorage.setItem('login', name.value);
           }
         }
       });
 
-      window.addEventListener("keydown", function (ent) {
+      window.addEventListener('keydown', function (ent) {
         if(ent.keyCode === 27) {
-          if (modal.classList.contains("modal-show")) {
+          if (modal.classList.contains('modal-show')) {
             ent.preventDefault();
-            modal.classList.remove("modal-show");
+            modal.classList.remove('modal-show');
           }
         }
       });
