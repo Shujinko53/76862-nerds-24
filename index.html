@@ -112,7 +112,7 @@
       <section class="clients container">
         <h2 class="visually-hidden">Наши Клиенты</h2>
         <ul class="clients-list list">
-          <li><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="HTML Academy"></a></li>
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="HTML Academy"></a></li>
           <li><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Barbershop"></a></li>
           <li><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink"></a></li>
           <li><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka"></a></li>
@@ -122,13 +122,14 @@
 
     <footer class="main-footer">
         <section class="contacts">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCQ0a6lp" width="1440" height="416" frameborder="1" allowfullscreen="true"></iframe>
           <div class="contact-us-wrapper container">
             <h2 class="visually-hidden">Наши контакты</h2>
             <div class="contact-us">
               <h2>Nёrds design studio</h2>
               <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <p>тел. +7 (812) 275-75-75</p>
-              <a class="button" href="#">Напишите нам</a>
+              <a class="button write-us-link" href="#">Напишите нам</a>
             </div>
           </div>
         </section>
@@ -153,18 +154,78 @@
         <button class="cross" type="reset"><img src="img/close-cross.png" width="21" height="21" alt="Крестик"></button>
         <p class="write-item write-us-name">
           <label for="name">Ваше имя: </label>
-          <input class="field" type="text" name="name" id="name" placeholder="Имя Фамилия">
+          <input class="field write-name" type="text" name="name" id="name" placeholder="Имя Фамилия">
         </p>
         <p class="write-item write-us-email">
           <label for="email">Ваш email:</label>
-          <input class="field" type="email" name="email" id="email" placeholder="email@example.com">
+          <input class="field write-pass" type="email" name="email" id="email" placeholder="email@example.com">
         </p>
         <p class="write-us-letter">
           <label for="letter">Текст письма:</label>
-          <textarea class="field" name="letter" id="letter" placeholder="В свободной форме"></textarea>
+          <textarea class="field write-comnt" name="letter" id="letter" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
     </section>
+
+    <script>
+      var link = document.querySelector(".write-us-link");
+      var modal = document.querySelector(".modal-write-us");
+      var close = modal.querySelector(".cross");
+      var form = modal.querySelector("form");
+      var name = modal.querySelector(".write-name");
+      var email = modal.querySelector(".write-pass");
+      var commt = modal.querySelector("textarea");
+      var storage = localStorage.getItem("login");
+
+      var isStorageSupport = true;
+      var storage = "";
+
+      try {
+        storage = localStorage.getItem ("login");
+      } catch (err) {
+        isStorageSupport = false;
+      }
+
+      link.addEventListener("click", function (ent) {
+        ent.preventDefault();
+        modal.classList.add("modal-show");
+        name.focus();
+        if (storage) {
+          login.value = storage;
+          email.focus ();
+        } else {
+          login.focus ();
+        }
+      });
+
+
+      close.addEventListener("click", function (ent) {
+        ent.preventDefault ();
+        modal.classList.remove("modal-show");
+        modal.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function (ent) {
+        if (!name.value || !email.value || !commt.value) {
+          ent.preventDefault ();
+          console.log("Нужно ввести логин и пароль")
+          modal.classList.toggle("modal-error");
+        } else {
+          if (isStorageSupport) {
+            localStorage.setItem("login", name.value);
+          }
+        }
+      });
+
+      window.addEventListener("keydown", function (ent) {
+        if(ent.keyCode === 27) {
+          if (modal.classList.contains("modal-show")) {
+            ent.preventDefault();
+            modal.classList.remove("modal-show");
+          }
+        }
+      });
+    </script>
   </body>
 </html>

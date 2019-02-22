@@ -946,7 +946,20 @@ a {
   background-image: url("../img/map.jpg");
 }
 
+.contacts iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  display: none;
+  width: 1440px;
+  height: 416px;
+  margin-left: -720px;
+}
+
 .contact-us {
+  z-index: 2;
+
   width: 220px;
   padding: 45px 50px;
 
@@ -1103,6 +1116,27 @@ a {
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
+.modal-show {
+  display: block;
+}
+
+@keyframes shake {
+  0%, 100% {
+  transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+  transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+  transform: translateX(5px);
+  }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.5s;
+}
+
 .write-us-form {
   display: flex;
   flex-wrap: wrap;
@@ -1116,6 +1150,8 @@ a {
   background-color: #ffffff;
   border: none;
   opacity: 0.3;
+
+  cursor: pointer;
 }
 
 .write-us-form .cross:hover,
@@ -1171,11 +1207,13 @@ a {
 }
 
 .write-us-form .field:focus {
+  color: #000000;
   border-color: #000000;
 }
 
 .write-us-form .field:invalid {
   color: #e74246;
+  border-color: #e74246;
 }
 
 .write-us-letter {
