@@ -927,39 +927,24 @@ a {
   padding-top: 54px;
   padding-bottom: 54px;
 
-  background-position: 50% 0;
-}
-
-.contacts::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 50%;
-  z-index: -1;
-
-  width: 1440px;
-  height: 416px;
-  margin-left: -720px;
-
   background-color: #f1efe8;
   background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .contacts iframe {
   position: absolute;
   top: 0;
   left: 50%;
-  z-index: -1;
 
-  width: 1440px;
-  height: 416px;
-  margin-left: -720px;
+  margin-left: -700px;
+
+  border: none;
 }
 
 .contact-us {
-  z-index: 2;
-
+  position: relative;
   width: 220px;
   padding: 45px 50px;
 
