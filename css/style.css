@@ -936,10 +936,9 @@ a {
 .contacts iframe {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
 
-  margin-left: -700px;
-
+  width: 100%;
   border: none;
 }
 
