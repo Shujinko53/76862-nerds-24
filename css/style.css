@@ -950,8 +950,8 @@ a {
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: -1;
 
-  display: none;
   width: 1440px;
   height: 416px;
   margin-left: -720px;
