@@ -36,14 +36,14 @@
             <button class=""></button>
           </div>
           <ul class="slider-list list">
-            <li class="slider-item">
+            <li class="slider-item slide-show">
               <h3>Долго, дорого,<br> скрупулезно.</h3>
               <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
               <a class="slider-item-button button" href="#">Узнать больше</a>
             </li>
             <li class="slider-item">
-              <h3>Любим математику как никто другой</h3>
-              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <h3>Любим математику<br> как никто другой</h3>
+              <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
               <a class="slider-item-button button" href="#">Узнать больше</a>
             </li>
             <li class="slider-item">
@@ -177,6 +177,12 @@
       var email = modal.querySelector('.write-pass');
       var commt = modal.querySelector('textarea');
       var storage = localStorage.getItem('login');
+      var slideButtonOne = document.querySelector('.slider-controls button:nth-child(1)');
+      var slideButtonTwo = document.querySelector('.slider-controls button:nth-child(2)');
+      var slideButtonThree = document.querySelector('.slider-controls button:nth-child(3)');
+      var slideOne = document.querySelector('.slider-list li:nth-child(1)');
+      var slideTwo = document.querySelector('.slider-list li:nth-child(2)');
+      var slideThree = document.querySelector('.slider-list li:nth-child(3)');
 
       var isStorageSupport = true;
       var storage = "";
@@ -214,6 +220,80 @@
         } else {
           if (isStorageSupport) {
             localStorage.setItem('login', name.value);
+          }
+        }
+      });
+
+      slideButtonOne.addEventListener('click', function (ent) {
+        ent.preventDefault();
+        slideOne.classList.add('slide-show');
+        slideTwo.classList.remove('slide-show');
+        slideThree.classList.remove('slide-show');
+      });
+
+      slideButtonTwo.addEventListener('click', function (ent) {
+        ent.preventDefault ();
+        slideTwo.classList.add('slide-show');
+        slideOne.classList.remove('slide-show');
+        slideThree.classList.remove('slide-show');
+      });
+
+      slideButtonThree.addEventListener('click', function (ent) {
+        ent.preventDefault ();
+        slideThree.classList.add('slide-show');
+        slideOne.classList.remove('slide-show');
+        slideTwo.classList.remove('slide-show');
+      });
+
+      window.addEventListener('keydown', function (ent) {
+        if (ent.keyCode === 39) {
+          if (slideOne.classList.contains('slide-show')) {
+            ent.preventDefault ();
+            slideOne.classList.remove('slide-show');
+            slideTwo.classList.add('slide-show');
+          }
+        } else {
+          if (ent.keyCode === 37) {
+            if (slideOne.classList.contains('slide-show')) {
+              ent.preventDefault ();
+              slideOne.classList.remove('slide-show');
+              slideThree.classList.add('slide-show');
+            }
+          }
+        }
+      });
+
+      window.addEventListener('keydown', function (ent) {
+        if (ent.keyCode === 39) {
+          if (slideTwo.classList.contains('slide-show')) {
+            ent.preventDefault ();
+            slideTwo.classList.remove('slide-show');
+            slideThree.classList.add('slide-show');
+          }
+        } else {
+          if (ent.keyCode === 37) {
+            if (slideTwo.classList.contains('slide-show')) {
+              ent.preventDefault ();
+              slideTwo.classList.remove('slide-show');
+              slideOne.classList.add('slide-show');
+            }
+          }
+        }
+      });
+
+      window.addEventListener('keydown', function (ent) {
+        if (ent.keyCode === 39) {
+          if (slideThree.classList.contains('slide-show')) {
+            ent.preventDefault ();
+            slideThree.classList.remove('slide-show');
+            slideOne.classList.add('slide-show');
+          }
+        }
+        if (ent.keyCode === 37) {
+          if (slideThree.classList.contains('slide-show')) {
+            ent.preventDefault ();
+            slideThree.classList.remove('slide-show');
+            slideTwo.classList.add('slide-show');
           }
         }
       });
