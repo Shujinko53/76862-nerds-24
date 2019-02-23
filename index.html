@@ -30,10 +30,13 @@
       <section class="slider">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
+            <input class="slider-input-1" type="radio" id="btn-1" name="toggle" checked>
+            <input class="slider-input-2" type="radio" id="btn-2" name="toggle">
+            <input class="slider-input-3" type="radio" id="btn-3" name="toggle">
           <div class="slider-controls">
-            <button class="active"></button>
-            <button class=""></button>
-            <button class=""></button>
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
           </div>
           <ul class="slider-list list">
             <li class="slider-item slide-show">
@@ -177,9 +180,9 @@
       var email = modal.querySelector('.write-pass');
       var commt = modal.querySelector('textarea');
       var storage = localStorage.getItem('login');
-      var slideButtonOne = document.querySelector('.slider-controls button:nth-child(1)');
-      var slideButtonTwo = document.querySelector('.slider-controls button:nth-child(2)');
-      var slideButtonThree = document.querySelector('.slider-controls button:nth-child(3)');
+      var slideButtonOne = document.querySelector('.slider-controls label:nth-child(1)');
+      var slideButtonTwo = document.querySelector('.slider-controls label:nth-child(2)');
+      var slideButtonThree = document.querySelector('.slider-controls label:nth-child(3)');
       var slideOne = document.querySelector('.slider-list li:nth-child(1)');
       var slideTwo = document.querySelector('.slider-list li:nth-child(2)');
       var slideThree = document.querySelector('.slider-list li:nth-child(3)');
@@ -243,59 +246,6 @@
         slideThree.classList.add('slide-show');
         slideOne.classList.remove('slide-show');
         slideTwo.classList.remove('slide-show');
-      });
-
-      window.addEventListener('keydown', function (ent) {
-        if (ent.keyCode === 39) {
-          if (slideOne.classList.contains('slide-show')) {
-            ent.preventDefault ();
-            slideOne.classList.remove('slide-show');
-            slideTwo.classList.add('slide-show');
-          }
-        } else {
-          if (ent.keyCode === 37) {
-            if (slideOne.classList.contains('slide-show')) {
-              ent.preventDefault ();
-              slideOne.classList.remove('slide-show');
-              slideThree.classList.add('slide-show');
-            }
-          }
-        }
-      });
-
-      window.addEventListener('keydown', function (ent) {
-        if (ent.keyCode === 39) {
-          if (slideTwo.classList.contains('slide-show')) {
-            ent.preventDefault ();
-            slideTwo.classList.remove('slide-show');
-            slideThree.classList.add('slide-show');
-          }
-        } else {
-          if (ent.keyCode === 37) {
-            if (slideTwo.classList.contains('slide-show')) {
-              ent.preventDefault ();
-              slideTwo.classList.remove('slide-show');
-              slideOne.classList.add('slide-show');
-            }
-          }
-        }
-      });
-
-      window.addEventListener('keydown', function (ent) {
-        if (ent.keyCode === 39) {
-          if (slideThree.classList.contains('slide-show')) {
-            ent.preventDefault ();
-            slideThree.classList.remove('slide-show');
-            slideOne.classList.add('slide-show');
-          }
-        }
-        if (ent.keyCode === 37) {
-          if (slideThree.classList.contains('slide-show')) {
-            ent.preventDefault ();
-            slideThree.classList.remove('slide-show');
-            slideTwo.classList.add('slide-show');
-          }
-        }
       });
 
       window.addEventListener('keydown', function (ent) {

@@ -607,6 +607,10 @@ a {
   background-color: #eeeeee;
 }
 
+.slider input {
+  display: none;
+}
+
 .slider-item {
   display: none;
   padding: 78px 0 80px 0;
@@ -665,7 +669,7 @@ a {
   transform: translateX(-50%);
 }
 
-.slider-controls button {
+.slider-controls label {
   position: relative;
 
   width: 18px;
@@ -678,6 +682,12 @@ a {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-input:checked:nth-child(1) ~ .slider-controls label:nth-child(1),
+.slider-input:checked:nth-child(2) ~ .slider-controls label:nth-child(2),
+.slider-input:checked:nth-child(3) ~ .slider-controls label:nth-child(3) {
+  background-color: #666666;
 }
 
 .slider-controls .active::before {
@@ -755,6 +765,7 @@ a {
 .service p {
   margin-bottom: 35px;
 }
+
 
 .service .button {
   width: 120px;
