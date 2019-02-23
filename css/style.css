@@ -178,7 +178,7 @@ a {
 
 .inner-header {
   margin: 0 0 60px;
-  padding: 82px 0 116px;
+  padding: 82px 0 102px;
 
   background-color:  #eeeeee;
 }
@@ -201,14 +201,14 @@ a {
 }
 
 .filter fieldset {
-  margin: 0 0 25px;
+  margin: 0 0 56px;
   padding: 0;
 
   border: none;
 }
 
 .filter legend {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   font-weight: 700;
   font-size: 18px;
@@ -216,8 +216,16 @@ a {
   text-transform: uppercase;
 }
 
+.filter fieldset:nth-child(2) {
+  margin-bottom: 25px;
+}
+
+.filter fieldset:nth-child(3) {
+  margin-bottom: 30px;
+}
+
 .filter-option .option-cost {
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 .range-controls {
@@ -386,7 +394,7 @@ a {
 
   display: flex;
   justify-content: space-between;
-  margin: 0 0 54px;
+  margin: 0 0 48px;
   padding: 0;
   width: 760px;
 
@@ -578,7 +586,7 @@ a {
 }
 
 .pagination-item {
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .pagination-item-current a,
@@ -944,7 +952,12 @@ a {
 }
 
 .clients-list a:first-child {
-  padding-right: 26px;
+  padding-right: 28px;
+}
+
+.clients-list li:nth-child(2) a {
+  display: block;
+  margin-bottom: 0px;
 }
 
 
@@ -982,7 +995,7 @@ a {
 
 .contact-us h2 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   font-weight: 700px;
   font-size: 18px;
@@ -992,7 +1005,7 @@ a {
 
 .contact-us p {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   color: #666666;
 }
@@ -1106,7 +1119,8 @@ a {
 
 .footer-benefit b {
   display: block;
-  margin-bottom: 19px;
+  margin-top: 9px;
+  margin-bottom: 10px;
 
   font-size: 36px;
   line-height: 36px;
