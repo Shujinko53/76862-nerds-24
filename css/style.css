@@ -693,34 +693,25 @@ a {
   cursor: pointer;
 }
 
-
-.slider-input:checked:nth-child(1) ~ .slider-item label:nth-child(1),
-.slider-input:checked:nth-child(2) ~ .slider-item label:nth-child(2),
-.slider-input:checked:nth-child(3) ~ .slider-item label:nth-child(3) {
-  position: absolute;
-  left: 5px;
-  top: 5px;
-
-  width: 4px;
-  height: 4px;
-
-  border: 2px solid red;
-  border-radius: 50%;
-}
-
-/*.slider-controls .active::before {
+.slider-controls label::before {
   content: "";
 
   position: absolute;
-  left: 5px;
   top: 5px;
+  left: 5px;
 
   width: 4px;
   height: 4px;
 
-  border: 2px solid #c1c1c1;
+  border: 2px solid #c2c2c2;
   border-radius: 50%;
-} */
+
+  opacity: 0;
+}
+
+.container input:checked ~ .slider-controls label::before {
+  opacity: 1;
+}
 
 .services {
   margin-bottom: 40px;
