@@ -652,6 +652,12 @@ a {
   opacity: 1;
 }
 
+.slider-input-1:checked ~ .slider-list .slide-1,
+.slider-input-2:checked ~ .slider-list .slide-2,
+.slider-input-3:checked ~ .slider-list .slide-3 {
+  display: block;
+}
+
 .slider-item {
   display: none;
   padding: 78px 0 80px 0;
