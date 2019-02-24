@@ -615,6 +615,43 @@ a {
   background-color: #eeeeee;
 }
 
+.slider-controls label {
+  position: relative;
+
+  width: 18px;
+  height: 18px;
+  margin-right: 9px;
+  margin-left: 9px;
+  padding: 0;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  width: 4px;
+  height: 4px;
+
+  border: 2px solid #c2c2c2;
+  border-radius: 50%;
+
+  opacity: 0;
+}
+
+.slider-input-1:checked ~ .slider-controls .slider-label-1::before,
+.slider-input-2:checked ~ .slider-controls .slider-label-2::before,
+.slider-input-3:checked ~ .slider-controls .slider-label-3::before {
+  opacity: 1;
+}
+
 .slider-item {
   display: none;
   padding: 78px 0 80px 0;
@@ -678,40 +715,6 @@ a {
   transform: translateX(-50%);
 }
 
-.slider-controls label {
-  position: relative;
-
-  width: 18px;
-  height: 18px;
-  margin-right: 9px;
-  margin-left: 9px;
-  padding: 0;
-
-  background-color: #ffffff;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.slider-controls label::before {
-  content: "";
-
-  position: absolute;
-  top: 5px;
-  left: 5px;
-
-  width: 4px;
-  height: 4px;
-
-  border: 2px solid #c2c2c2;
-  border-radius: 50%;
-
-  opacity: 0;
-}
-
-.container input:checked ~ .slider-controls label::before {
-  opacity: 1;
-}
 
 .services {
   margin-bottom: 40px;
