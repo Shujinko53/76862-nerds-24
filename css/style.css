@@ -84,7 +84,7 @@ a {
 }
 
 .main-navigation ul {
-  padding: 27px 0 0;
+  padding: 26px 0 0;
 }
 
 .main-navigation img {
@@ -127,7 +127,7 @@ a {
 
 .cart {
   position: relative;
-  padding-left: 41px;
+  padding-left: 40px;
 }
 
 .cart::before {
@@ -771,7 +771,7 @@ a {
 }
 
 .service h3 {
-  margin: 0;
+  margin: 0 0 16px 0;
   padding-top: 19px;
 
   font-weight: 700;
@@ -781,7 +781,7 @@ a {
 }
 
 .service p {
-  margin-bottom: 31px;
+  margin: 0 20px 32px 0;
 }
 
 
@@ -896,7 +896,7 @@ a {
 
 .efficiency {
   width: 33.33333%;
-  padding-bottom: 31px;
+  padding: 0 0 35px 0;
 
   font-weight: 700;
   font-size: 45px;
@@ -907,6 +907,11 @@ a {
   font-weight: 700;
   font-size: 30px;
   vertical-align: 100%;
+}
+
+.efficiency-cell {
+  padding: 0;
+  line-height: 18px;
 }
 
 .clients-list {
