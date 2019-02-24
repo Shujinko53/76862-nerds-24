@@ -692,6 +692,7 @@ a {
 }
 
 .slider-item h3 {
+  width: 520px;
   margin: 0;
   margin-bottom: 27px;
 
@@ -701,8 +702,17 @@ a {
 }
 
 .slider-item p {
+  width: 420px;
   margin: 0;
   margin-bottom: 38px;
+}
+
+.slide-1 p{
+  width: 350px;
+}
+
+.slide-3 p{
+  width: 350px;
 }
 
 .slider .button {
