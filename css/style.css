@@ -149,7 +149,7 @@ a {
 
 .catalog-button {
   display: block;
-  padding: 13px 19px;
+  padding: 13px 18px;
 
   font-size: 16px;
   line-height: 18px;
@@ -586,7 +586,7 @@ a {
 }
 
 .pagination-item {
-  margin-right: 7px;
+  margin-right: 10px;
 }
 
 .pagination-item-current a,
@@ -838,7 +838,7 @@ a {
 
 .about-us b {
   display: block;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 
   font-weight: 500;
   font-size: 45px;
@@ -847,12 +847,12 @@ a {
 
 .about-us p {
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .about-us h3 {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 
   text-transform: uppercase;
 }
@@ -888,8 +888,7 @@ a {
 }
 
 .efficiency-wrapped h3 {
-  margin-left: 17px;
-  margin-bottom: 50px;
+  margin: 15px 0 50px 17px;
 
   text-transform: uppercase;
 }
@@ -903,7 +902,7 @@ a {
   line-height: 10px;
 }
 
-.about-our-efficiency span {
+.efficiency-percent {
   font-weight: 700;
   font-size: 30px;
   vertical-align: 100%;
@@ -927,13 +926,16 @@ a {
 }
 
 .clients-list li {
-  width: 25%;
+  max-width: 300px;
+  min-width: 280px;
   height: 52px;
 
   text-align: center;
 
   box-sizing: border-box;
 }
+
+
 
 .clients-list li:not(:nth-child(4n)) {
   border-right: 2px solid #eeeeee;
@@ -957,21 +959,30 @@ a {
 }
 
 .clients-list a:first-child {
-  padding-right: 28px;
+  margin: -2px 17px 0 0;
 }
 
 .clients-list li:nth-child(2) a {
   display: block;
-  margin-bottom: 0px;
+  margin: -18px 46px 0;
 }
 
+.clients-list li:nth-child(3) a {
+  display: block;
+  margin: 1px 58px 0;
+}
+
+.clients-list li:nth-child(4) a {
+  display: block;
+  margin: -12px -1px 0px 20px;
+}
 
 /* Footer */
 
 .contacts {
   position: relative;
   padding-top: 54px;
-  padding-bottom: 49px;
+  padding-bottom: 50px;
 
   background-color: #f1efe8;
   background-image: url("../img/map.jpg");
@@ -999,8 +1010,7 @@ a {
 }
 
 .contact-us h2 {
-  margin: 0;
-  margin-bottom: 22px;
+  margin: 0 0 24px 0;
 
   font-weight: 700px;
   font-size: 18px;
@@ -1009,14 +1019,14 @@ a {
 }
 
 .contact-us p {
-  margin: 0;
-  margin-bottom: 8px;
+  margin: 0 8px 18px 1px;
 
+  line-height: 18px;
   color: #666666;
 }
 
 .contact-us p:nth-child(3) {
-  margin-bottom: 33px;
+  margin-bottom: 37px;
 }
 
 .contact-us .button {
@@ -1124,8 +1134,8 @@ a {
 
 .footer-benefit b {
   display: block;
-  margin-top: 9px;
-  margin-bottom: 10px;
+  margin-top: 11px;
+  margin-bottom: 8px;
 
   font-size: 36px;
   line-height: 36px;
