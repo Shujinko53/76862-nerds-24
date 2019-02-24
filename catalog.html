@@ -172,7 +172,7 @@
     </main>
     <footer class="main-footer">
       <section class="contacts">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CCQgbJ4A" width="1200" height="416"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCQHMT0g" width="1200" height="416"></iframe>
         <div class="container">
           <h2 class="visually-hidden">Наши контакты</h2>
           <div class="contact-us">
@@ -217,73 +217,5 @@
         <button class="button" type="submit">Отправить</button>
       </form>
     </section>
-
-    <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset class="filter-item">
-        <legend>Стоимость:</legend>
-      </fieldset>
-      </form>
-
-    <script>
-      var linkWriteUs = document.querySelector(".write-us-link");
-      var modal = document.querySelector(".modal-write-us");
-      var modalClose = modal.querySelector(".cross");
-      var form = modal.querySelector("form");
-      var name = modal.querySelector('.write-name');
-      var email = modal.querySelector('.write-pass');
-      var commt = modal.querySelector('textarea');
-      var storage = localStorage.getItem('login');
-
-      var isStorageSupport = true;
-      var storage = "";
-
-      try {
-        storage = localStorage.getItem ('login');
-      } catch (err) {
-        isStorageSupport = false;
-      }
-
-      linkWriteUs.addEventListener('click', function (ent) {
-        ent.preventDefault();
-        modal.classList.add('modal-show');
-        name.focus();
-        if (storage) {
-          login.value = storage;
-          email.focus ();
-        } else {
-          login.focus ();
-        }
-      });
-
-
-      modalClose.addEventListener('click', function (ent) {
-        ent.preventDefault ();
-        modal.classList.remove('modal-show');
-        modal.classList.remove('modal-error');
-      });
-
-      form.addEventListener('submit', function (ent) {
-        if (!name.value || !email.value || !commt.value) {
-          ent.preventDefault ();
-          console.log('Нужно ввести логин и пароль')
-          modal.classList.toggle('modal-error');
-        } else {
-          if (isStorageSupport) {
-            localStorage.setItem('login', name.value);
-          }
-        }
-      });
-
-      window.addEventListener('keydown', function (ent) {
-        if(ent.keyCode === 27) {
-          if (modal.classList.contains('modal-show')) {
-            ent.preventDefault();
-            modal.classList.remove('modal-show');
-            modal.classList.remove('modal-error');
-          }
-        }
-      });
-      </script>
-
   </body>
 </html>

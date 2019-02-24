@@ -502,8 +502,8 @@ a {
   content: "";
 
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 13px;
+  left: 16px;
 
   width: 14px;
   height: 14px;
@@ -511,8 +511,8 @@ a {
   background-color: #ffffff;
   border-radius: 50%;
   box-shadow:
-  20px 0 0 #ffffff,
-  40px 0 0 #ffffff;
+  23px 0 0 #ffffff,
+  46px 0 0 #ffffff;
 }
 
 .templates-list li:hover,
@@ -534,7 +534,6 @@ a {
   position: absolute;
   bottom: 0;
 
-  display: none;
   width: 240px;
   height: 231px;
   padding: 0 60px;
@@ -543,6 +542,8 @@ a {
 
   background-color: #eeeeee;
 }
+
+
 
 .templates-list > li:hover .templates-info {
   display: block;
@@ -553,6 +554,9 @@ a {
 }
 
 .templates-info h3 {
+  display: block;
+  margin: 27px 3px 15px 0;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -570,7 +574,7 @@ a {
 }
 
 .templates-info p {
-  margin-bottom: 40px;
+  margin: 0 0 30px 0px;
 
   line-height: 18px;
   color: #666666;
@@ -671,7 +675,7 @@ a {
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: right 32px bottom 18px;
 }
 
 .slider-item:nth-child(2) {
@@ -702,17 +706,17 @@ a {
 }
 
 .slider-item p {
-  width: 420px;
   margin: 0;
   margin-bottom: 38px;
 }
 
-.slide-1 p{
+.slide-1 p,
+.slide-3 p {
   width: 350px;
 }
 
-.slide-3 p{
-  width: 350px;
+.slide-2 p {
+  width: 420px;
 }
 
 .slider .button {
