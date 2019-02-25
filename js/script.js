@@ -2,17 +2,16 @@
 var linkWriteUs = document.querySelector('.write-us-link');
 var modal = document.querySelector('.modal-write-us');
 var modalClose = modal.querySelector('.cross');
-var form = modal.querySelector('form');
+var form = modal.querySelector('write-us-form');
 var name = modal.querySelector('.write-name');
 var email = modal.querySelector('.write-pass');
-var commt = modal.querySelector('textarea');
-var storage = localStorage.getItem('login');
+var commt = modal.querySelector('write-comnt');
 
 var isStorageSupport = true;
-var storage = "";
+var storage = '';
 
 try {
-  storage = localStorage.getItem ('login');
+  storage = localStorage.getItem ('name');
 } catch (err) {
   isStorageSupport = false;
 }
@@ -35,7 +34,7 @@ modalClose.addEventListener('click', function (evt) {
   modal.classList.remove('modal-error');
 });
 
-form.addEventListener('submit', function (evt) {
+write-us-form.addEventListener('submit', function (evt) {
   if (!name.value || !email.value || !commt.value) {
     evt.preventDefault ();
     console.log('Нужно ввести логин и пароль')
