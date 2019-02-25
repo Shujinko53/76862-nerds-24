@@ -672,22 +672,21 @@ a {
   display: block;
 }*/
 
+.slider-item {
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
-  background-position: right 3px bottom 0;
 }
 
 .slider-item:nth-child(2) {
   background-image: url("../img/slide2.png");
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
 }
 
 .slider-item:nth-child(3) {
   background-image: url("../img/slide3.png");
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
 }
 
 .slider-list {
