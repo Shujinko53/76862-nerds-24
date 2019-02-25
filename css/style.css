@@ -675,7 +675,7 @@ a {
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: right 32px bottom 0;
+  background-position: right 3px bottom 0;
 }
 
 .slider-item:nth-child(2) {
@@ -708,11 +708,6 @@ a {
 .slider-item p {
   margin: 0;
   margin-bottom: 38px;
-}
-
-.slide-1 p,
-.slide-3 p {
-  width: 350px;
 }
 
 .slide-2 p {
