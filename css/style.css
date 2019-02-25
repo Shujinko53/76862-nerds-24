@@ -675,19 +675,19 @@ a {
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: right 32px bottom 18px;
+  background-position: right 32px bottom 0;
 }
 
 .slider-item:nth-child(2) {
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 100% 100%;
 }
 
 .slider-item:nth-child(3) {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
-  background-position: 100% 20px;
+  background-position: 100% 100%;
 }
 
 .slider-list {
