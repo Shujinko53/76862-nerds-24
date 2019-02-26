@@ -21,27 +21,27 @@ linkWriteUs.addEventListener('click', function (evt) {
   login.focus();
     if (storage) {
       login.value = storage;
-      email.focus ();
+      email.focus();
     } else {
-      login.focus ();
+      login.focus();
   }
 });
 
 modalClose.addEventListener('click', function (evt) {
-  evt.preventDefault ();
+  evt.preventDefault();
   modal.classList.remove('modal-show');
   modal.classList.remove('modal-error');
 });
 
 modalForm.addEventListener('submit', function (evt) {
   if (!name.value || !email.value || !commt.value) {
-    evt.preventDefault ();
+    evt.preventDefault();
     modal.classList.toggle('modal-error');
   }
 });
 
 window.addEventListener('keydown', function (evt) {
-  if(evt.keyCode === 27) {
+  if (evt.keyCode === 27) {
     if (modal.classList.contains('modal-show')) {
       evt.preventDefault();
       modal.classList.remove('modal-show');
