@@ -1,17 +1,16 @@
-
 var linkWriteUs = document.querySelector('.write-us-link');
 var modal = document.querySelector('.modal-write-us');
 var modalClose = modal.querySelector('.cross');
-var modalform = modal.querySelector('.write-us-form');
-var name = modal.querySelector('.write-name');
+var modalForm = modal.querySelector('.write-us-form');
+var login = modal.querySelector('.write-name');
 var email = modal.querySelector('.write-pass');
-var commt = modal.querySelector('write-comnt');
+var commt = modal.querySelector('.write-comnt');
 
 var isStorageSupport = true;
 var storage = '';
 
 try {
-  storage = localStorage.getItem ('name');
+  storage = localStorage.getItem('login');
 } catch (err) {
   isStorageSupport = false;
 }
@@ -19,7 +18,7 @@ try {
 linkWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal.classList.add('modal-show');
-  name.focus();
+  login.focus();
     if (storage) {
       login.value = storage;
       email.focus ();
@@ -34,7 +33,7 @@ modalClose.addEventListener('click', function (evt) {
   modal.classList.remove('modal-error');
 });
 
-modalform.addEventListener('submit', function (evt) {
+modalForm.addEventListener('submit', function (evt) {
   if (!name.value || !email.value || !commt.value) {
     evt.preventDefault ();
     modal.classList.toggle('modal-error');
