@@ -1187,7 +1187,7 @@ a {
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%,-50%);
   }
 }
 
@@ -1195,7 +1195,7 @@ a {
   display: block;
 
   animation-name: bounce;
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
 }
 
 @keyframes shake {
