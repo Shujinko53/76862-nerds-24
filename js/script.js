@@ -3,7 +3,7 @@ var modal = document.querySelector('.modal-write-us');
 var modalClose = modal.querySelector('.cross');
 var modalForm = modal.querySelector('.write-us-form');
 var login = modal.querySelector('.write-name');
-var email = modal.querySelector('.write-pass');
+var email = modal.querySelector('.write-email');
 var commt = modal.querySelector('.write-comnt');
 
 var isStorageSupport = true;
