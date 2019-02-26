@@ -1161,21 +1161,21 @@ a {
 .modal-write-us {
   display: none;
   position: fixed;
-  bottom: 180px;
+  top: 50%;
   left: 50%;
 
   width: 760px;
-  margin: 0;
-  margin-left: -480px;
   padding: 66px 100px 84px;
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+
+  transform: translate(-50%,-50%);
 }
 
 @keyframes bounce {
   0% {
-    transform: translateY(1000px);
+    transform: translateY(-1000px);
   }
 
   70% {
