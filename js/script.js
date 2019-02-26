@@ -19,11 +19,11 @@ linkWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal.classList.add('modal-show');
   login.focus();
-    if (storage) {
-      login.value = storage;
-      email.focus();
-    } else {
-      login.focus();
+  if (storage) {
+    login.value = storage;
+    email.focus();
+  } else {
+    login.focus();
   }
 });
 
@@ -38,9 +38,12 @@ modalForm.addEventListener('submit', function (evt) {
     evt.preventDefault();
 
     modal.classList.remove('modal-error');
-    setTimeout(function () {
+    modal.offsetWidth = modal.offsetWidth;
+    modal.classList.add('modal-error');
+
+    /* setTimeout(function () {
       modal.classList.add('modal-error');
-    }, 0);
+    }, 0); */
   }
 });
 

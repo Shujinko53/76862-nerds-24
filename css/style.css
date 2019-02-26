@@ -183,7 +183,7 @@ a {
   margin: 0 0 60px;
   padding: 82px 0 102px;
 
-  background-color:  #eeeeee;
+  background-color: #eeeeee;
 }
 
 .inner-page h1 {
@@ -244,8 +244,6 @@ a {
 
   border-radius: 5px;
 }
-
-
 
 .range-controls .scale {
   height: 2px;
@@ -342,7 +340,7 @@ a {
   padding-left: 36px;
 }
 
-.filter-input:disabled + label {
+.filter-input:disabled+label {
   color: rgba(40, 49, 54, 0.3);
 }
 
@@ -351,7 +349,7 @@ a {
   clip: rect(0, 0, 0, 0);
 }
 
-.filter-input + label::before {
+.filter-input+label::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -518,8 +516,8 @@ a {
   background-color: #ffffff;
   border-radius: 50%;
   box-shadow:
-  23px 0 0 #ffffff,
-  46px 0 0 #ffffff;
+    23px 0 0 #ffffff,
+    46px 0 0 #ffffff;
 }
 
 .templates-list li:hover,
@@ -551,7 +549,7 @@ a {
   background-color: #eeeeee;
 }
 
-.templates-list > li:hover .templates-info {
+.templates-list>li:hover .templates-info {
   display: block;
 }
 
@@ -1057,7 +1055,7 @@ a {
 }
 
 .social-list li {
-  width: 33,33333%;
+  width: 33, 33333%;
   margin-right: 12px;
 }
 
@@ -1199,14 +1197,25 @@ a {
 }
 
 @keyframes shake {
-  0%, 100% {
-  transform: translate(-50%, -50%);
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
   }
-  10%, 30%, 50%, 70%, 90% {
-  transform: translate(-49%, -50%);
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-49%, -50%);
   }
-  20%, 40%, 60%, 80% {
-  transform: translate(-51%, -50%);
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-51%, -50%);
   }
 }
 
@@ -1239,7 +1248,7 @@ a {
   border: none;
 }
 
-.write-us-form p label{
+.write-us-form p label {
   display: block;
   margin-bottom: 9px;
 
