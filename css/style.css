@@ -12,6 +12,8 @@ a {
 
   font-weight: 500;
   color: #000000;
+
+  outline: none;
 }
 
 .container {
@@ -41,6 +43,7 @@ a {
   background-color: #fb565a;
   border: none;
   border-radius: 3px;
+  outline: none;
 }
 
 .button:hover,
@@ -242,6 +245,8 @@ a {
   border-radius: 5px;
 }
 
+
+
 .range-controls .scale {
   height: 2px;
 
@@ -268,6 +273,7 @@ a {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 2px 1px 0 #cfcfcf;
+  outline: none;
 }
 
 .price-toggle::before {
@@ -314,6 +320,7 @@ a {
   background-color: #f1f1f1;
   border: none;
   border-radius: 3px;
+  outline: none;
 }
 
 .price-controls .max-price {
@@ -1160,14 +1167,35 @@ a {
   width: 760px;
   margin: 0;
   margin-left: -480px;
-  padding: 0 100px;
+  padding: 66px 100px 84px;
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(1000px);
+  }
+
+  70% {
+    transform: translateY(-40px);
+  }
+
+  90% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal-show {
   display: block;
+
+  animation-name: bounce;
+  animation-duration: 0.3s;
 }
 
 @keyframes shake {
@@ -1187,39 +1215,18 @@ a {
   animation-duration: 0.5s;
 }
 
-.write-us-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-}
-
-.write-us-form .cross {
-  margin: 78px 0 53px;
-
-  background-color: #ffffff;
-  border: none;
-  opacity: 0.3;
-
-  cursor: pointer;
-}
-
-.write-us-form .cross:hover,
-.write-us-form .cross:focus {
-  opacity: 1;
-}
-
-.write-us-form .cross:active {
-  opacity: 0.1;
-}
-
-.write-us-form b {
-  margin: 66px 0 36px;
-  padding-right: 250px;
+.modal-write-us h2 {
+  margin: 0 0 36px;
 
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+}
+
+.write-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .write-us-form .write-item {
@@ -1235,6 +1242,8 @@ a {
 .write-us-form p label{
   display: block;
   margin-bottom: 9px;
+
+  font-weight: 700;
 }
 
 .write-item input {
@@ -1250,6 +1259,8 @@ a {
   color: rgba(68, 68, 68, 0.5);
 
   border: 2px solid #d7dcde;
+  outline: none;
+  box-shadow: none;
 }
 
 .write-us-form .field:hover {
@@ -1281,7 +1292,33 @@ a {
 
 .write-us-form .button {
   width: 260px;
-  margin-bottom: 84px;
 
   line-height: 18px;
+}
+
+.write-us-form .cross {
+  position: absolute;
+  top: 77px;
+  right: 85px;
+
+  width: 21px;
+  height: 21px;
+
+  background-color: #ffffff;
+  background-image: url("../img/close-cross.png");
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  opacity: 0.3;
+
+  cursor: pointer;
+}
+
+.write-us-form .cross:hover,
+.write-us-form .cross:focus {
+  opacity: 1;
+}
+
+.write-us-form .cross:active {
+  opacity: 0.1;
 }

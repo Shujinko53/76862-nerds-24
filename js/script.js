@@ -36,7 +36,9 @@ modalClose.addEventListener('click', function (evt) {
 modalForm.addEventListener('submit', function (evt) {
   if (!name.value || !email.value || !commt.value) {
     evt.preventDefault();
-    modal.classList.toggle('modal-error');
+    modal.classList.remove('modal-error');
+    window.formWidth = modal.offsetWidth + modal.scrollHeight;
+    modal.classList.add('modal-error');
   }
 });
 
