@@ -1175,19 +1175,19 @@ a {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-1000px);
+    transform: translateY(-50%,-1000px);
   }
 
   70% {
-    transform: translateY(-40px);
+    transform: translateY(-50%,-30px);
   }
 
   90% {
-    transform: translateY(10px);
+    transform: translateY(-50%,10px);
   }
 
   100% {
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,0);
   }
 }
 
