@@ -334,7 +334,7 @@ a {
   margin-bottom: 20px;
 }
 
-.filter-input + label {
+.filter-input+label {
   position: relative;
 
   padding-left: 36px;
@@ -359,34 +359,34 @@ a {
   opacity: 0.4;
 }
 
-.filter-input + label:hover::before,
-.filter-input:focus + label::before {
+.filter-input+label:hover::before,
+.filter-input:focus+label::before {
   opacity: 1;
 }
 
-.filter-input:disabled + label::before {
+.filter-input:disabled+label::before {
   opacity: 0.1;
 }
 
-.filter-input-radio + label::before {
+.filter-input-radio+label::before {
   width: 25px;
   height: 25px;
 
   background-image: url("../img/radio-off.svg");
 }
 
-.filter-input-radio:checked + label::before {
+.filter-input-radio:checked+label::before {
   background-image: url("../img/radio-on.svg");
 }
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox+label::before {
   width: 26px;
   height: 23px;
 
   background-image: url("../img/checkbox-off.svg");
 }
 
-.filter-input-checkbox:checked + label::before {
+.filter-input-checkbox:checked+label::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
@@ -654,15 +654,15 @@ a {
   opacity: 0;
 }
 
-.slider-input-1:checked ~ .slider-controls .slider-label-1::before,
-.slider-input-2:checked ~ .slider-controls .slider-label-2::before,
-.slider-input-3:checked ~ .slider-controls .slider-label-3::before {
+.slider-input-1:checked~.slider-controls .slider-label-1::before,
+.slider-input-2:checked~.slider-controls .slider-label-2::before,
+.slider-input-3:checked~.slider-controls .slider-label-3::before {
   opacity: 1;
 }
 
-.slider-input-1:checked ~ .slider-list .slide-1,
-.slider-input-2:checked ~ .slider-list .slide-2,
-.slider-input-3:checked ~ .slider-list .slide-3 {
+.slider-input-1:checked~.slider-list .slide-1,
+.slider-input-2:checked~.slider-list .slide-2,
+.slider-input-3:checked~.slider-list .slide-3 {
   display: block;
 }
 
@@ -1197,7 +1197,6 @@ a {
 }
 
 @keyframes shake {
-
   0%,
   100% {
     transform: translate(-50%, -50%);
@@ -1281,7 +1280,12 @@ a {
   border-color: #000000;
 }
 
-.write-us-form .field:invalid {
+.write-us-form .field::-ms-clear,
+.write-us-form .field::-ms-reveal {
+  display: none;
+}
+
+.modal-invalid .field:invalid {
   color: #e74246;
   border-color: #e74246;
 }
