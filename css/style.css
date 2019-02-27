@@ -1171,51 +1171,11 @@ a {
   transform: translate(-50%, -50%);
 }
 
-@keyframes bounce {
-  0% {
-    transform: translate(-50%, -1000%);
-  }
-
-  70% {
-    transform: translate(-50%, -42%);
-  }
-
-  90% {
-    transform: translate(-50%, -54%);
-  }
-
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-
 .modal-show {
   display: block;
 
   animation-name: bounce;
   animation-duration: 0.5s;
-}
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translate(-50%, -50%);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translate(-49%, -50%);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translate(-51%, -50%);
-  }
 }
 
 .modal-error {
@@ -1334,4 +1294,44 @@ a {
 
 .write-us-form .cross:active {
   opacity: 0.1;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -1000%);
+  }
+
+  70% {
+    transform: translate(-50%, -42%);
+  }
+
+  90% {
+    transform: translate(-50%, -54%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-49%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-51%, -50%);
+  }
 }
