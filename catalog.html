@@ -18,7 +18,7 @@
       <ul class="site-navigation list">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li class="navigation-item-current"><a href="#">Магазин</a></li>
+        <li class="navigation-item-current"><a>Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="user-navigation list">
@@ -36,7 +36,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр макетов</h2>
 
-        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter-option">
             <legend class="option-cost">Стоимость:</legend>
             <div class="range-filter">
@@ -44,12 +44,12 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <button class="price-toggle price-toggle-min" type="button"></button>
-                <button class="price-toggle price-toggle-max" type="button"></button>
+                <button class="price-toggle price-toggle-min" type="button" aria-label="Изменить минимальную цену"></button>
+                <button class="price-toggle price-toggle-max" type="button" aria-label="Изменить максимальную цену"></button>
               </div>
               <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
               </div>
             </div>
           </fieldset>
@@ -57,16 +57,16 @@
             <legend>Сетка:</legend>
             <ul class="list">
               <li class="filter-option">
-                <input class="filter-item filter-input filter-input-radio" type="radio" id="adaptive" value="adaptive"
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" id="adaptive" value="adaptive"
                   name="network-choice" checked>
                 <label for="adaptive">Адаптивная</label>
               </li>
               <li class="filter-option">
-                <input class="filter-item filter-input filter-input-radio" type="radio" id="fixed" value="fixed" name="network-choice">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" id="fixed" value="fixed" name="network-choice">
                 <label for="fixed">Фиксированная</label>
               </li>
               <li class="filter-option">
-                <input class="filter-item filter-input filter-input-radio" type="radio" id="rubber" value="rubber" name="network-choice">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" id="rubber" value="rubber" name="network-choice">
                 <label for="rubber">Резиновая</label>
               </li>
             </ul>
@@ -84,8 +84,7 @@
                 <label for="advantages">Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <input class="filter-item filter-input filter-input-checkbox" type="checkbox" id="news" name="feature-news"
-                  checked>
+                <input class="filter-item filter-input filter-input-checkbox" type="checkbox" id="news" name="feature-news" checked>
                 <label for="news">Новости</label>
               </li>
               <li class="filter-option">
@@ -106,14 +105,14 @@
         <h2 class="visually-hidden">Список шаблонов</h2>
         <div class="sort">
           <b>Сортировать:</b>
-          <ul class="sort-options list" aria-label="sort-options-area">
+          <ul class="sort-options list">
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По названию</a></li>
           </ul>
           <ul class="sort-options-order list">
-            <li><a class="order-increase" href="#"></a></li>
-            <li><a class="order-decrease" href="#"></a></li>
+            <li><a class="order-increase" href="#" aria-label="По возрастанию"></a></li>
+            <li><a class="order-decrease" href="#" aria-label="По убыванию"></a></li>
           </ul>
         </div>
         <ul class="templates-list list">
@@ -123,7 +122,7 @@
               <a class="template-info-heading" href="#">
                 <h3>Sedona</h3>
               </a>
-              <p>Информационный сайт<br> для туристов</p>
+              <p>Информационный сайт<br>для туристов</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </li>
@@ -143,7 +142,7 @@
               <a class="template-info-heading" href="#">
                 <h3>Barbershop</h3>
               </a>
-              <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+              <p>Сайт салона красоты.<br>Для мужчин, да.</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </li>
@@ -153,7 +152,7 @@
               <a class="template-info-heading" href="#">
                 <h3>Mishka</h3>
               </a>
-              <p>Интернет-магазин<br> вязаных игрушек</p>
+              <p>Интернет-магазин<br>вязаных игрушек</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </li>
@@ -203,9 +202,9 @@
 
     <div class="social-footer-wrapper container">
       <ul class="social-list list">
-        <li><a class="social-link social-vk" href="#"></a></li>
-        <li><a class="social-link social-fb" href="#"></a></li>
-        <li><a class="social-link social-inst" href="#"></a></li>
+        <li><a class="social-link social-vk" href="#" aria-label="Мы во Вконтакте"></a></li>
+        <li><a class="social-link social-fb" href="#" aria-label="Мы в Фэйсбуке"></a></li>
+        <li><a class="social-link social-inst" href="#" aria-label="Мы в Инстаграме"></a></li>
       </ul>
       <div class="footer-benefit">
         <b>Давайте дружить, это выгодно!</b>
@@ -218,9 +217,8 @@
     <h2>Напишите нам</h2>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="write-item write-us-name">
-        <label for="name">Ваше имя: </label>
-        <input class="field write-name" type="text" name="name" id="name" placeholder="Имя Фамилия" pattern="[А-ЯЁA-Z][а-яёa-z]* [А-ЯЁA-Z][а-яёa-z]*"
-          required>
+        <label for="name">Ваше имя:</label>
+        <input class="field write-name" type="text" name="name" id="name" placeholder="Имя Фамилия" pattern="[А-ЯЁA-Z][а-яёa-z]* [А-ЯЁA-Z][а-яёa-z]*" required>
       </p>
       <p class="write-item write-us-email">
         <label for="email">Ваш email:</label>
@@ -231,7 +229,7 @@
         <textarea class="field write-comnt" name="letter" id="letter" placeholder="В свободной форме" required></textarea>
       </p>
       <button class="button" type="submit">Отправить</button>
-      <button class="cross" type="button"></button>
+      <button class="cross" type="button" aria-label="Закрыть"></button>
     </form>
   </section>
 

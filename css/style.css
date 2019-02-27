@@ -94,13 +94,13 @@ a {
   display: block;
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus {
+.main-navigation a[href]:hover,
+.main-navigation :focus {
   opacity: 0.8;
   color: #fb565a;
 }
 
-.main-navigation a:active {
+.main-navigation a[href]:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -271,7 +271,6 @@ a {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 2px 1px 0 #cfcfcf;
-  outline: none;
 }
 
 .price-toggle::before {
@@ -334,22 +333,17 @@ a {
   margin-bottom: 20px;
 }
 
-.filter-input+label {
+.filter-input + label {
   position: relative;
 
   padding-left: 36px;
 }
 
-.filter-input:disabled+label {
+.filter-input:disabled + label {
   color: rgba(40, 49, 54, 0.3);
 }
 
-.filter-item {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-}
-
-.filter-input+label::before {
+.filter-input + label::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -359,34 +353,34 @@ a {
   opacity: 0.4;
 }
 
-.filter-input+label:hover::before,
-.filter-input:focus+label::before {
+.filter-input + label:hover::before,
+.filter-input:focus + label::before {
   opacity: 1;
 }
 
-.filter-input:disabled+label::before {
+.filter-input:disabled + label::before {
   opacity: 0.1;
 }
 
-.filter-input-radio+label::before {
+.filter-input-radio + label::before {
   width: 25px;
   height: 25px;
 
   background-image: url("../img/radio-off.svg");
 }
 
-.filter-input-radio:checked+label::before {
+.filter-input-radio:checked + label::before {
   background-image: url("../img/radio-on.svg");
 }
 
-.filter-input-checkbox+label::before {
+.filter-input-checkbox + label::before {
   width: 26px;
   height: 23px;
 
   background-image: url("../img/checkbox-off.svg");
 }
 
-.filter-input-checkbox:checked+label::before {
+.filter-input-checkbox:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
@@ -654,15 +648,15 @@ a {
   opacity: 0;
 }
 
-.slider-input-1:checked~.slider-controls .slider-label-1::before,
-.slider-input-2:checked~.slider-controls .slider-label-2::before,
-.slider-input-3:checked~.slider-controls .slider-label-3::before {
+.slider-input-1:checked ~ .slider-controls .slider-label-1::before,
+.slider-input-2:checked ~ .slider-controls .slider-label-2::before,
+.slider-input-3:checked ~ .slider-controls .slider-label-3::before {
   opacity: 1;
 }
 
-.slider-input-1:checked~.slider-list .slide-1,
-.slider-input-2:checked~.slider-list .slide-2,
-.slider-input-3:checked~.slider-list .slide-3 {
+.slider-input-1:checked ~ .slider-list .slide-1,
+.slider-input-2:checked ~ .slider-list .slide-2,
+.slider-input-3:checked ~ .slider-list .slide-3 {
   display: block;
 }
 
