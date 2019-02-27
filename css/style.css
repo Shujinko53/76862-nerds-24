@@ -86,12 +86,19 @@ a {
   text-transform: uppercase;
 }
 
+.main-navigation img {
+  display: block;
+}
+
 .main-navigation ul {
+  align-items: flex-start;
   padding: 26px 0 0;
 }
 
-.main-navigation img {
-  display: block;
+.site-navigation li,
+.user-navigation li {
+  margin-left: 45px;
+  padding-bottom: 3px;
 }
 
 .main-navigation a[href]:hover,
@@ -110,11 +117,6 @@ a {
   justify-content: space-between;
   width: 486px;
   margin-right: 45px;
-}
-
-.site-navigation li,
-.user-navigation li {
-  margin-left: 45px;
 }
 
 .navigation-item-current {
@@ -181,7 +183,7 @@ a {
 
 .inner-header {
   margin: 0 0 60px;
-  padding: 82px 0 102px;
+  padding: 78px 0 106px;
 
   background-color: #eeeeee;
 }
@@ -191,6 +193,7 @@ a {
   font-size: 55px;
   line-height: 55px;
   text-align: center;
+  letter-spacing: 0.06px;
 }
 
 .inner-page-wrapper {
@@ -204,10 +207,14 @@ a {
 }
 
 .filter fieldset {
-  margin: 0 0 56px;
+  margin: -3px 0 60px;
   padding: 0;
 
   border: none;
+}
+
+.option-cost {
+  letter-spacing: 0.7px;
 }
 
 .filter legend {
@@ -220,15 +227,17 @@ a {
 }
 
 .filter fieldset:nth-child(2) {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+  margin-left: 1px;
 }
 
 .filter fieldset:nth-child(3) {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+  margin-left: 1px;
 }
 
 .filter-option .option-cost {
-  margin-bottom: 46px;
+  margin-bottom: 48px;
 }
 
 .range-controls {
@@ -289,7 +298,7 @@ a {
 }
 
 .price-toggle-max {
-  left: 165px;
+  left: 160px;
 }
 
 .price-controls {
@@ -1012,7 +1021,7 @@ a {
 }
 
 .contact-us h2 {
-  margin: 0 0 24px 0;
+  margin: 3px 0 22px 0;
 
   font-weight: 700px;
   font-size: 18px;
@@ -1137,10 +1146,11 @@ a {
 .footer-benefit b {
   display: block;
   margin-top: 11px;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 
   font-size: 36px;
   line-height: 36px;
+  letter-spacing: 0.16px;
 }
 
 .footer-benefit p {
