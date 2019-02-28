@@ -629,6 +629,7 @@ a {
 
 /* Стили главной страницы */
 
+
 .slider {
   position: relative;
 
@@ -742,7 +743,6 @@ a {
   transform: translateX(-50%);
 }
 
-
 .services {
   margin-bottom: 40px;
 
@@ -803,7 +803,6 @@ a {
 .service p {
   margin: 0 20px 32px 0;
 }
-
 
 .service .button {
   width: 120px;
@@ -941,7 +940,6 @@ a {
 
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
-
 }
 
 .clients-list li {
@@ -1014,7 +1012,6 @@ a {
   width: 100%;
   height: 100%;
   border: none;
-
 }
 
 .contact-us {
