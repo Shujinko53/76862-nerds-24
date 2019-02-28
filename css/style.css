@@ -552,12 +552,13 @@ a {
 
   display: none;
   width: 240px;
-  height: 231px;
-  padding: 0 60px;
+  padding: 0 60px 43px;
 
   text-align: center;
 
   background-color: #eeeeee;
+
+  overflow: auto
 }
 
 .templates-list>li:hover .templates-info {
