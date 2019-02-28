@@ -215,7 +215,6 @@ a {
 
 .filter fieldset:not(:first-child) {
   margin-bottom: 28px;
-  margin-left: 1px;
 }
 
 .option-cost {
@@ -904,7 +903,7 @@ a {
 }
 
 .efficiency-wrapped h3 {
-  margin: 0 0 56px;
+  margin: 0 0 55px;
   text-align: center;
 
   text-transform: uppercase;
@@ -920,10 +919,14 @@ a {
 }
 
 .efficiency-percent {
+  display: inline-block;
+
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 10px;
-  vertical-align: 100%;
+  vertical-align: baseline;
+
+  transform: translate(-1px,-14px);
 }
 
 .efficiency-cell {
