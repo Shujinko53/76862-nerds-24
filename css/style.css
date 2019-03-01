@@ -466,6 +466,7 @@ a {
 .sort-options-order a {
   display: block;
 
+  color: rgba(166, 166, 166, 0.2);
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
 }
@@ -475,22 +476,17 @@ a {
   color: #a6a6a6;
 }
 
-.sort-options-order a[href]:active {
+.sort-options-order a[href]:active,
+.sort-options-order .order-option-current {
   color: #000000;
 }
 
 .order-increase {
-  color: rgba(166, 166, 166, 0.2);
   border-bottom: 10px solid;
 }
 
 .order-decrease {
-  color: rgba(166, 166, 166, 0.2);
   border-top: 10px solid;
-}
-
-.order-option-current {
-  color: #000000;
 }
 
 .sort-options-order li:nth-child(2) {
