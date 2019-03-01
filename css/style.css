@@ -90,6 +90,15 @@ a {
   display: block;
 }
 
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
 .main-navigation ul {
   align-items: flex-start;
   padding: 26px 0 0;
@@ -102,7 +111,6 @@ a {
 
 .main-navigation a[href]:hover,
 .main-navigation a:focus {
-  opacity: 0.8;
   color: #fb565a;
 }
 
@@ -462,6 +470,11 @@ a {
   border-left: 6px solid transparent;
 }
 
+.sort-options-order a:hover,
+.sort-options-order a:focus {
+  outline: 1px solid rgb(39, 134, 158);
+}
+
 .order-increase {
   color: #a6a6a6;
   border-top: 10px solid;
@@ -732,6 +745,8 @@ a {
 .slider-item p {
   margin: 0;
   margin-bottom: 38px;
+
+  color: #283136;
 }
 
 .slide-2 p {
@@ -801,6 +816,8 @@ a {
 
 .service p {
   margin: 0 20px 32px 0;
+
+  color: #283136;
 }
 
 .service .button {
@@ -866,6 +883,8 @@ a {
 .about-us p {
   margin: 0;
   margin-bottom: 40px;
+
+  color: #283136;
 }
 
 .about-us h3 {
@@ -879,6 +898,8 @@ a {
   position: relative;
   margin-bottom: 24px;
   padding-left: 37px;
+
+  color: #283136;
 }
 
 .about-our-servies li::before {
@@ -932,6 +953,8 @@ a {
 .efficiency-cell {
   padding: 0;
   line-height: 18px;
+
+  color: #283136;
 }
 
 .clients-list {
