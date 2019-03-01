@@ -1215,7 +1215,7 @@ a {
 }
 
 .modal-write-us h2 {
-  margin: 0 0 36px;
+  margin: 0 0 37px;
 
   font-weight: 500;
   font-size: 45px;
@@ -1231,7 +1231,7 @@ a {
 .write-us-form .write-item {
   width: 360px;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 }
 
 .write-us-form fieldset {
@@ -1240,14 +1240,14 @@ a {
 
 .write-us-form p label {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 
   font-weight: 700;
 }
 
 .write-item input {
   width: 360px;
-  padding: 16px 20px 18px 14px;
+  padding: 14px 20px 14px 13px;
 
   box-sizing: border-box;
 }
@@ -1284,12 +1284,12 @@ a {
 .write-us-letter {
   width: 760px;
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 
 .write-us-letter textarea {
   width: 760px;
-  padding: 13px 20px 85px 13px;
+  padding: 11px 20px 67px 13px;
 
   box-sizing: border-box;
 }
@@ -1302,8 +1302,8 @@ a {
 
 .write-us-form .cross {
   position: absolute;
-  top: 77px;
-  right: 85px;
+  top: 76px;
+  right: 90px;
 
   width: 21px;
   height: 21px;
