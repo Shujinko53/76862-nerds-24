@@ -470,19 +470,23 @@ a {
   border-left: 6px solid transparent;
 }
 
-.sort-options-order a:hover,
+.sort-options-order a[href]:hover,
 .sort-options-order a:focus {
-  outline: 1px solid rgb(39, 134, 158);
+  color: #a6a6a6;
+}
+
+.sort-options-order a[href]:active {
+  color: #000000;
 }
 
 .order-increase {
-  color: #a6a6a6;
-  border-top: 10px solid;
+  color: rgba(166, 166, 166, 0.2);
+  border-bottom: 10px solid;
 }
 
 .order-decrease {
-  color: #a6a6a6;
-  border-bottom: 10px solid;
+  color: rgba(166, 166, 166, 0.2);
+  border-top: 10px solid;
 }
 
 .order-option-current {
