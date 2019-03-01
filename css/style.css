@@ -932,7 +932,7 @@ a {
 
 .efficiency {
   width: 33.33333%;
-  padding: 0 0 30px;
+  padding: 0 0 35px;
 
   font-weight: 700;
   font-size: 45px;
@@ -940,14 +940,9 @@ a {
 }
 
 .efficiency-percent {
-  display: inline-block;
-
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 10px;
-  vertical-align: baseline;
-
-  transform: translate(-1px,-14px);
+  position: relative;
+  top: -15px;
+  font-size: 27px;
 }
 
 .efficiency-cell {
