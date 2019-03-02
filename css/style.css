@@ -200,7 +200,7 @@ a {
   font-size: 55px;
   line-height: 55px;
   text-align: center;
-  letter-spacing: 0.06px; /* Pixelperfect */
+  font-kerning: none; /* Pixelperfect */
 }
 
 .inner-page-wrapper {
@@ -878,6 +878,7 @@ a {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  font-kerning: none; /* Pixelperfect */
 }
 
 .about-us p {
@@ -892,6 +893,7 @@ a {
   margin-bottom: 24px;
 
   text-transform: uppercase;
+  font-kerning: none; /* Pixelperfect */
 }
 
 .about-our-servies li {
@@ -1172,7 +1174,7 @@ a {
 
   font-size: 36px;
   line-height: 36px;
-  letter-spacing: 0.16px; /* Pixelperfect */
+  font-kerning: none; /* Pixelperfect */
 }
 
 .footer-benefit p {
