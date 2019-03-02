@@ -867,7 +867,7 @@ a {
 }
 
 .about-us {
-  width: 660px;
+  width: 680px;
   padding-top: 34px;
 }
 
@@ -926,15 +926,19 @@ a {
 }
 
 .efficiency-wrapped h3 {
-  margin: 0 0 56px;
+  margin: 0 0 58px;
   text-align: center;
 
   text-transform: uppercase;
 }
 
+.about-our-efficiency {
+  border-spacing: 0;
+}
+
 .efficiency {
   width: 33.33333%;
-  padding: 0 0 35px;
+  padding: 0 0 37px;
 
   font-weight: 700;
   font-size: 45px;
