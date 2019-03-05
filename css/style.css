@@ -682,12 +682,12 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
-
+/*
 .slider-controls label:hover,
 .slider-controls label:focus {
-  border: 2px solid #c2c2c2;
+  border: 1px solid #c2c2c2;
 }
-
+*/
 .slider-controls label::before {
   content: "";
 
