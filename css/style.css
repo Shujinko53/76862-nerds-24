@@ -683,7 +683,10 @@ a {
   cursor: pointer;
 }
 
-.slider-controls label:hover,
+.slider-controls label:hover {
+  border: 2px solid #c2c2c2;
+}
+
 .container input:focus-within {
   border: 2px solid #c2c2c2;
 }
@@ -988,7 +991,7 @@ a {
   opacity: 0.2;
 }
 
-.clients-link::after {
+.clients-list li::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1001,7 +1004,7 @@ a {
   transform: translateY(-50%);
 }
 
-.clients-link:nth-child(4n)::after {
+.clients-list li:nth-child(4n)::after {
   content: none;
 }
 
@@ -1023,7 +1026,7 @@ a {
 }
 
 .logo-mishka {
-  margin: 5px 18px 0 20px;
+  margin: 5px 2px 0;
 }
 
 
