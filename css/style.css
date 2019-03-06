@@ -562,19 +562,23 @@ a {
   position: absolute;
   bottom: 0;
 
-  display: none;
   width: 240px;
   padding: 27px 60px 43px;
 
   text-align: center;
 
   background-color: #eeeeee;
+  opacity: 0;
 
   overflow: auto;
 }
 
 .templates-item:hover .templates-info {
-  display: block;
+  opacity: 1;
+}
+
+.templates-item:focus-within .templates-info {
+  opacity: 1;
 }
 
 .templates-info h3 {
@@ -683,11 +687,9 @@ a {
   cursor: pointer;
 }
 
-.slider-controls label:hover {
-  border: 2px solid #c2c2c2;
-}
-
-.container input:focus-within {
+.slider-input-1:focus ~ .slider-controls .slider-label-1,
+.slider-input-2:focus ~ .slider-controls .slider-label-2,
+.slider-input-3:focus ~ .slider-controls .slider-label-3 {
   border: 2px solid #c2c2c2;
 }
 
@@ -719,12 +721,9 @@ a {
 }
 
 .slider-item {
-  width: 520px;
   display: none;
-  padding: 78px 700px 80px 0;
-}
+  padding: 78px 640px 80px 0;
 
-.slider-item {
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
