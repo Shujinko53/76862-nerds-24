@@ -29,8 +29,6 @@ a {
 }
 
 .button {
-  top: 0;
-
   display: inline-block;
   padding: 17px 20px 15px;
 
@@ -40,6 +38,7 @@ a {
   font-family: inherit;
   text-transform: uppercase;
   text-align: center;
+  vertical-align: top;
   color: #ffffff;
 
   background-color: #fb565a;
@@ -717,8 +716,9 @@ a {
 }
 
 .slider-item {
+  width: 520px;
   display: none;
-  padding: 78px 730px 80px 0;
+  padding: 78px 700px 80px 0;
 }
 
 .slider-item {
@@ -739,7 +739,6 @@ a {
 }
 
 .slider-item h3 {
-  width: 520px;
   margin: 0;
   margin-bottom: 27px;
 
@@ -749,8 +748,7 @@ a {
 }
 
 .slider-item p {
-  margin: 0;
-  margin-bottom: 38px;
+  margin: 0 90px 38px 0;
 
   color: #283136;
 }
@@ -860,7 +858,7 @@ a {
 .about-us-wrapped {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
 }
 
 .about-us-wrapped h3 {
@@ -964,61 +962,69 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 80px;
-  padding-top: 65px;
-  padding-bottom: 64px;
+  padding-top: 46px;
 
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
 
 .clients-list li {
-  max-width: 300px;
-  min-width: 280px;
-  height: 52px;
-
-  text-align: center;
-
-  box-sizing: border-box;
-}
-
-.clients-list li:not(:nth-child(4n)) {
-  border-right: 2px solid #eeeeee;
-}
-
-.clients-list a {
   position: relative;
 
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  margin: 0 auto 44px 0;
+}
+
+.clients-links {
+  position: relative;
 
   opacity: 0.2;
 }
 
-.clients-list a:hover,
-.clients-list a:focus {
+.clients-links::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -21px;
+
+  width: 2px;
+  height: 52px;
+
+  background: #eeeeee;
+  transform: translateY(-50%);
+}
+
+.clients-links:nth-child(4n) {
+  margin-right: 0;
+}
+
+.clients-links:nth-child(4n)::after {
+  content: none;
+}
+
+.clients-links:hover,
+.clients-links:focus {
   opacity: 1;
 }
 
-.clients-list a:active {
+.clients-links:active {
   opacity: 0.1;
 }
 
-.client-link-1 {
+.logo-htmlacademy {
   margin: -2px 17px 0 0;
 }
 
-.client-link-2 {
-  margin: -18px 46px 0;
-}
-
-.client-link-3{
-  margin: 1px 58px 0;
-}
-
-.client-link-4 {
+.logo-mishka {
   margin: -12px -1px 0 20px;
 }
 
+
 /* Footer */
+
 
 .contacts {
   position: relative;
@@ -1080,17 +1086,13 @@ a {
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  width: 260px;
-  margin-right: 140px;
+  width: 272px;
+  margin-right: 128px;
 }
 
 .social-list li {
   margin-right: 12px;
   margin-bottom: 10px;
-}
-
-.social-list li:nth-child(3n) {
-  margin-right: 0;
 }
 
 .social-link {
