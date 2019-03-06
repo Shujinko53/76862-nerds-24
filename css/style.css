@@ -978,13 +978,17 @@ a {
   margin: 0 auto 44px 0;
 }
 
-.clients-links {
+.clients-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.clients-link {
   position: relative;
 
   opacity: 0.2;
 }
 
-.clients-links::after {
+.clients-link::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -997,29 +1001,29 @@ a {
   transform: translateY(-50%);
 }
 
-.clients-list li:nth-child(4n) {
-  margin-right: 0;
-}
-
-.clients-links:nth-child(4n)::after {
+.clients-link:nth-child(4n)::after {
   content: none;
 }
 
-.clients-links:hover,
-.clients-links:focus {
+.clients-link:hover,
+.clients-link:focus {
   opacity: 1;
 }
 
-.clients-links:active {
+.clients-link:active {
   opacity: 0.1;
 }
 
+.clients-link img {
+  display: block;
+}
+
 .logo-htmlacademy {
-  margin: -2px 17px 0 0;
+  margin: 9px -1px 0 0;
 }
 
 .logo-mishka {
-  margin: -12px -1px 0 20px;
+  margin: 5px 18px 0 20px;
 }
 
 
