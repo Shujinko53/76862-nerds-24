@@ -997,7 +997,7 @@ a {
   transform: translateY(-50%);
 }
 
-.clients-links:nth-child(4n) {
+.clients-list li:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1085,6 +1085,7 @@ a {
 
 .social-list {
   display: flex;
+  align-content: flex-start;
   flex-wrap: wrap;
   width: 272px;
   margin-right: 128px;
@@ -1146,12 +1147,11 @@ a {
 
 .footer-benefit {
   max-width: 620px;
-  margin: -12px 0 0 0;
+  padding: 6px 0 0;
 }
 
 .footer-benefit b {
   display: block;
-  margin-top: 18px;
   margin-bottom: 9px;
 
   font-size: 36px;
