@@ -315,9 +315,10 @@ a {
 .price-controls input {
   width: 60px;
   margin-left: 12px;
-  padding: 10px;
+  padding: 10px 10px 7px;
 
   font-size: 16px;
+  line-height: 22px;
   font-family: "Roboto", "Arial", sans-serif;
   text-align: center;
   color: #283136;
@@ -438,6 +439,7 @@ a {
 }
 
 .sort-options a {
+  font-weight: 400;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -560,6 +562,7 @@ a {
   bottom: 0;
 
   width: 240px;
+  max-height: 506px;
   padding: 27px 60px 43px;
 
   text-align: center;
@@ -607,6 +610,10 @@ a {
 
 .templates-info .button {
   width: 160px;
+}
+
+.templates-info .button:active {
+  color: #ffffff;
 }
 
 .pagination-list {
@@ -1073,6 +1080,12 @@ a {
   color: #666666;
 }
 
+.tel-link {
+  font-weight: 400;
+
+  color: #666666;
+}
+
 .contact-us p:nth-child(3) {
   margin-bottom: 37px;
 }
@@ -1155,7 +1168,7 @@ a {
 
 .footer-benefit b {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   font-size: 36px;
   line-height: 36px;
@@ -1166,6 +1179,7 @@ a {
   margin: 0;
   margin-bottom: 6px;
 
+  line-height: 22px;
   color: #444444;
 }
 
@@ -1197,7 +1211,7 @@ a {
 }
 
 .modal-write-us h2 {
-  margin: 0 0 37px;
+  margin: 0 0 40px;
 
   font-weight: 500;
   font-size: 45px;
@@ -1213,7 +1227,7 @@ a {
 .write-us-form .write-item {
   width: 360px;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 34px;
 }
 
 .write-us-form fieldset {
@@ -1222,9 +1236,10 @@ a {
 
 .write-us-form label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 
   font-weight: 700;
+  line-height: 18px;
 }
 
 .write-item input {
