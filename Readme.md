@@ -3,6 +3,8 @@
 * Студент: [Дмитрий Красавин](https://up.htmlacademy.ru/htmlcss/24/user/76862).
 * Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/efiand).
 
+<a href="https://shujinko53.github.io/76862-nerds-24/index.html">Опубликованная версия</a>
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
